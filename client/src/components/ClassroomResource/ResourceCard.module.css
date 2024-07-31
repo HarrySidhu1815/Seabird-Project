@@ -1,0 +1,40 @@
+.card{
+    height: 37.5rem;
+    width: 100%;
+    max-width: 25rem;
+    background-color: #80d8ff;
+    border-radius: 2rem;
+}
+
+.image{
+    height: 53%;
+    background-color: #717171;
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+.card-desc{
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-desc h2{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.card-desc p{
+    font-size: 1.25rem;
+}
+
+.view-btn{
+    width: 7.5rem;
+    height: 3.75rem;
+    border-radius: 2.5rem;
+    padding: 0.31rem;
+    background-color: #002473;
+    color: #ffffff;
+    align-self: center;
+}
+
