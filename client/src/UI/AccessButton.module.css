@@ -1,0 +1,30 @@
+.access-btn{
+    margin: 0 auto;
+    width: 26.25rem;
+    height: 9.13rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7rem;
+    gap: 1.25rem;
+    padding: 2rem;
+    background-color: white;
+    cursor: pointer;
+    border: 0.4rem solid #d10000;
+}
+
+.paragraph{
+    width: 15.56rem;
+    font-size: 1.5rem;
+    color: black;
+    text-align: left;
+    font-weight: 500;
+}
+
+.image{
+    background-color: #ffffff;
+    color: #d10000;
+    height: 5.63rem;
+    width: 5.63rem;
+}

@@ -21,16 +21,3 @@
     font-size: 2rem;
     width: 40rem;
 }
-
-.access-btn{
-    margin: 0 auto;
-    width: 26.25rem;
-    height: 9.13rem;
-    font-size: 2rem;
-    display: flex;
-
-}
-.image{
-    background-color: #ffffff;
-    color: #d10000;
-}
