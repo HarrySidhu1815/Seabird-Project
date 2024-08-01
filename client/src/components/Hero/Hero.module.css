@@ -1,9 +1,12 @@
 #hero{
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     background-image: url('../../assets/hero.png');
+    background-size: cover;
     margin: none;
     display: flex;
     padding-left: 6.25rem;
+    padding-bottom: 4rem;
     flex-direction: column;
 }
 
@@ -19,5 +22,5 @@
     color: white;
     margin: none;
     font-size: 2rem;
-    width: 40rem;
+    width: 50%;
 }

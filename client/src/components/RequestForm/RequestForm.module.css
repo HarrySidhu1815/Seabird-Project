@@ -9,8 +9,8 @@
 }
 
 .header{
-    width: 62.50rem;
-    height: 12.69rem;
+    width: 70%;
+    height: auto;
     text-align: center;
 }
 
@@ -20,13 +20,13 @@
 }
 
 .header p{
-    width: 46rem;
+    width: 70%;
     margin: auto;
     font-size: 1.25rem;
     height: 9.13rem;
 }
 .request-form{
-    width: 60.75rem;
+    width: 70%;
     height: 43.56rem;
     display: flex;
     justify-content: space-between;

@@ -1,7 +1,7 @@
 .footer{
-    height: 20.25rem;
+    min-height: 20.25rem;
+    height: auto;
     width: 100vw;
-    stroke-width: 0.6rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,7 +23,8 @@
 }
 
 .links{
-    height: 16.25rem;
+    min-height: 16.25rem;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -32,8 +33,9 @@
 }
 
 .outer-div{
-    width: 26.25rem;
-    height: 12.88rem;
+    width: 28%;
+    min-height: 12.88rem;
+    height: auto;
     border-left: 0.06rem solid #00B2ff;
     padding-left: 2rem;
 }
@@ -44,7 +46,7 @@
 .outer-div ul {
     display: flex;
     flex-direction: column;
-    width: 18.75rem;
+    width: 100%;
     list-style: none;
     font-size: 1rem;
     -webkit-padding-start: 0;
