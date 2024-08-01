@@ -1,0 +1,14 @@
+.login{
+    max-width: 100vw;
+    height: 18.75rem;
+    background-image: url('../../assets/login.png');
+    background-size: cover;
+    padding: 6.25rem;
+    display: flex;
+    align-items: center;
+}
+
+.login h1{
+    font-size: 6rem;
+    color: #ffffff;
+}

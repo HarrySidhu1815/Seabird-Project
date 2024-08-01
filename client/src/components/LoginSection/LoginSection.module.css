@@ -1,0 +1,28 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    padding: 7.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container h1{
+    width: 70%;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 6rem;
+}
+
+.login-container input{
+    width: 30%;
+    height: 4rem;
+    border-radius: 1rem;
+    background-color: #f5f5f5;
+    border: 0.1rem solid rgba(72, 71, 71, 0.175);
+}
+
+.login-container p{
+    width: 30%;
+    text-align: center;
+    margin-bottom: 7rem;
+}
