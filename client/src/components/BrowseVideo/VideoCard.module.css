@@ -1,0 +1,23 @@
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 49%;
+    height: 28.5rem;
+    margin: 0;
+}
+.card-container img{
+    width: 100%;
+    margin: 0;
+    height: 60%;
+    background-color: #d9d9d9;
+}
+.card-decription h2{
+    margin-top: 1.5rem;
+    margin: 0;
+    font-size: 2rem;
+}
+.card-decription p {
+    margin: 0;
+    font-size: 1rem;
+}

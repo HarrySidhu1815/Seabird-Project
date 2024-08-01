@@ -3,12 +3,11 @@ import classes from './VideoCard.module.css'
 
 export default function VideoCard({video}) {
   return (
-    <div className={classes}>
+    <div className={classes['card-container']}>
       <img />
-      <div>
+      <div className={classes['card-decription']}>
         <h2>{video.title}</h2>
-        <i>{video.topic}</i>
-        <p>Features: {video.speaker.map(speaker => (speaker + ' '))}</p>
+        <p><i>{video.topic}</i><br/>Features: {video.speaker.map(speaker => (speaker + ' '))}</p>
       </div>
     </div>
   )
