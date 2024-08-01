@@ -1,0 +1,31 @@
+.sideFilter{
+    width: 25vw;
+    background-color: #002473;
+    color: #ffffff;
+}
+
+.topic-filter, .speaker-filter{
+    padding: 2rem;
+}
+
+.topic-filter h3, .speaker-filter h3{
+    font-size: 1.25rem;
+}
+
+.topic-filter div, .speaker-filter div{
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.topic-filter input, .speaker-filter input{
+    padding-left: 2rem;
+    height: 1.88rem;
+    min-width: 10%;
+    color: #002473;
+}
+.topic-filter label, .speaker-filter label{
+    font-size: 1.25rem;
+    align-self: center;
+}
