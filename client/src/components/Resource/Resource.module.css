@@ -1,0 +1,8 @@
+.resource{
+    margin: 4rem 6rem;
+    min-height: 250vh;
+}
+
+.resource h1{
+    font-size: 3rem;
+}

@@ -1,0 +1,44 @@
+.lesson{
+    margin-left: 7rem;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 2.75rem;
+    margin-bottom: 3rem;
+}
+.lesson-level{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.lesson-level h4{
+    font-size: 1rem;
+    margin: 0;
+    color: #000000;
+}
+.lesson-level div{
+    height: 0.25rem;
+    background-color: #00b2ff;
+    width: 8.44rem;
+}
+.lesson-description{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.lesson-description h2{
+    margin: 0;
+    font-size: 2rem;
+}
+
+.lesson-description p{
+    margin: 0;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.lesson-description span{
+    align-self: end;
+    color: #d10000;
+    font-weight: bold;
+    text-decoration: underline;
+}
