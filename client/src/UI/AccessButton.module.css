@@ -11,6 +11,11 @@
     padding: 2rem;
     background-color: white;
     cursor: pointer;
+}
+.loggedInAccount{
+    border: 0.4rem solid #4ecf00;
+}
+.notLoggedInAccount{
     border: 0.4rem solid #d10000;
 }
 

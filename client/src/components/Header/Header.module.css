@@ -32,13 +32,21 @@
 }
 
 .login-btn{
-    background-color: #D10000;
     width: 7.56rem;
     height: 2.69rem;
     border-radius: 1.63rem;
-    color: #ffffff;
     font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.loggedInAccount{
+    background-color: #4ecf00;
+    color: #000000
+}
+
+.notLoggedInAccount{
+    background-color: #D10000;
+    color: #ffffff;
 }

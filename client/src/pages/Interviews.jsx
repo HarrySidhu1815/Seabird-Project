@@ -5,11 +5,13 @@ import VideoNav from "../components/VideoNav/VideoNav";
 import { DUMMY_DATA, getVideosBySpeakers, getVideosByTopics } from "../util/video";
 import BrowseVideo from "../components/BrowseVideo/BrowseVideo";
 import classes from './Interviews.module.css'
+import { useSelector } from "react-redux";
 
 export default function Interviews() {
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSpeakers, setSelectedSpeakers] = useState([]);
   const [selectedVideos, setSelectedVideos] = useState(DUMMY_DATA);
+  const {currentUser} = useSelector((state) => state.user)
 
   function handleFilterTopicChange(topic) {
     const updatedTopics = selectedTopics.includes(topic)
@@ -41,7 +43,7 @@ export default function Interviews() {
   return (
     <div>
       <Interview />
-      <div className={classes['video-section']}>
+      <div className={`${classes['video-section']} ${!currentUser ? classes['restricted'] : ''}`}>
         <VideoNav
           selectedTopics={selectedTopics}
           selectedSpeakers={selectedSpeakers}
@@ -50,6 +52,11 @@ export default function Interviews() {
         />
         <BrowseVideo videos={selectedVideos} />
       </div>
+      {!currentUser && (
+          <div className={classes.lockPanel}>
+            <button className={classes.lockButton}>🔒 Unlock More Videos</button>
+          </div>
+        )}
       <RequestForm />
     </div>
   );
