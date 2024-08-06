@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import classes from './LoginSection.module.css'
 import Input from '../../UI/Input'
 import { useNavigate } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { logInFailure, logInStart, logInSuccess } from '../../redux/user/userSlice'
 
 export default function LoginSection() {
     const [formData, setFormData] = useState({admin: false})
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState(false)
+    const {loading, error} = useSelector((state) => state.user)
+    const dispatch = useDispatch()
     const navigate = useNavigate()
 
     function handleInputChange(e){
@@ -20,10 +22,8 @@ export default function LoginSection() {
 
     async function handleFormSubmit(e){
         e.preventDefault()
-        setLoading(true)
-        setError(false)
         try {
-            setLoading(true)
+            dispatch(logInStart)
             const res = await fetch('/api/auth/signin', {
                 method: 'POST',
                 headers: {
@@ -32,17 +32,17 @@ export default function LoginSection() {
                 body: JSON.stringify(formData)
             })
             const data = await res.json()
-            console.log(data)
-            setLoading(false)
-
+            
             if(data.success === false){
-                setError(true)
-            } else{
-              navigate('/')
+              dispatch(logInFailure(data))
+              return
             }
+
+            dispatch(logInSuccess(data))
+            navigate('/')
+    
         } catch (error) {
-            setLoading(false)
-            setError(true)
+            dispatch(logInFailure(error))
         }
     }
   return (
