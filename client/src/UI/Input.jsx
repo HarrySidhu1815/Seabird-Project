@@ -1,7 +1,8 @@
 import React from 'react'
+import classes from './Input.module.css'
 
-export default function Input({name, title}) {
+export default function Input({name, title, ...props}) {
   return (
-    <input type='text' name='first-name' placeholder='First Name' required/>
+    <input className={classes.input} id={name} name={name} placeholder={title} required {...props}/>
   )
 }
