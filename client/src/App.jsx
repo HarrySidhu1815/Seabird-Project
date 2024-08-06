@@ -6,6 +6,7 @@ import Curriculum from './pages/Curriculum'
 import Login from './pages/Login'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import SignUp from './pages/SignUp'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path='/interviews' element={<Interviews />} />
         <Route path='/curriculum' element={<Curriculum />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/signup' element={<SignUp />} />
       </Routes>
       <Footer />
     </BrowserRouter>
