@@ -6,6 +6,7 @@ import { DUMMY_DATA, getVideosBySpeakers, getVideosByTopics } from "../util/vide
 import BrowseVideo from "../components/BrowseVideo/BrowseVideo";
 import classes from './Interviews.module.css'
 import { useSelector } from "react-redux";
+import AccessButton from "../UI/AccessButton";
 
 export default function Interviews() {
   const [selectedTopics, setSelectedTopics] = useState([]);
@@ -54,7 +55,7 @@ export default function Interviews() {
       </div>
       {!currentUser && (
           <div className={classes.lockPanel}>
-            <button className={classes.lockButton}>🔒 Unlock More Videos</button>
+            <AccessButton />
           </div>
         )}
       <RequestForm />
