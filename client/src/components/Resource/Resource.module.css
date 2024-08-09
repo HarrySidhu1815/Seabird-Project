@@ -1,8 +1,26 @@
 .resource{
     margin: 4rem 6rem;
-    min-height: 250vh;
+    height: auto;
 }
 
-.resource h1{
+.lesson-header{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.lesson-header button{
+    background: none;
+    cursor: pointer;
+    height: 70%;
+    border: none;
+}
+
+.open{
+    transform: rotate(180deg);
+    transition: transform 0.2s ease-out;
+}
+
+.lesson-header h1{
     font-size: 3rem;
 }
