@@ -29,3 +29,8 @@
     font-size: 1.25rem;
     align-self: center;
 }
+@media screen and (max-width: 900px) {
+    .sideFilter{
+        display: none;
+    }
+}

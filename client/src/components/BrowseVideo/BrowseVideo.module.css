@@ -1,9 +1,9 @@
 .video-section{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 100%;
 }
 .video-section h1{
     display: flex;

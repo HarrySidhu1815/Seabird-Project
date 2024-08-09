@@ -53,3 +53,9 @@
     background-color: #D10000;
     color: #ffffff;
 }
+
+@media screen and (max-width: 900px) {
+    .nav{
+        display: none;
+    }
+}

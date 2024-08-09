@@ -11,3 +11,9 @@
     font-size: 6rem;
     color: #ffffff;
 }
+
+@media screen and (max-width: 900px) {
+    .interview h1{
+        font-size: 3rem;
+    }
+}
