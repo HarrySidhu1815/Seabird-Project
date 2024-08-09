@@ -11,7 +11,7 @@ export default function Resource() {
     <div className={classes.resource}>
       {subjects.map((subject) => {
         const lessons = getAllLessonBySubject(subject);
-        const [isExpanded, setIsExpanded] = useState(false);
+        const [isExpanded, setIsExpanded] = useState(true);
 
         function handleExpandClick() {
           setIsExpanded((prevState) => !prevState);
