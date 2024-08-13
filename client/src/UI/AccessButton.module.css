@@ -34,3 +34,13 @@
     height: 5.63rem;
     width: 5.63rem;
 }
+
+@media screen and (max-width: 900px) {
+    .access-btn{
+        width: 19.75rem;
+        height: 6.88rem;
+    }
+    .paragraph{
+        font-size: 1.25rem;
+    }
+}

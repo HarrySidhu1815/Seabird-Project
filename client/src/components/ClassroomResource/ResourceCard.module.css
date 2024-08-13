@@ -38,3 +38,14 @@
     align-self: center;
 }
 
+@media screen and (max-width: 900px) {
+    .card-desc{
+        padding: 0.5rem 1.25rem;
+        line-height: 1.5rem;
+        margin: 0;
+    }
+    .card-desc h2{
+        margin: 0;
+        line-height: 2rem;
+    }
+}
