@@ -29,7 +29,7 @@
     display: flex;
     justify-content: center;
     background-color: #e5f7ff;
-    align-items: center;
+    align-items: self-start;
 }
 
 .outer-div{
@@ -54,4 +54,17 @@
 }
 .outer-div ul li{
     text-decoration: underline;
+}
+
+@media screen and (max-width: 700px) {
+    .links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .outer-div{
+        border-bottom: 0.06rem solid #00B2ff;
+        border-left: none;
+        width: 18.5rem;
+    }
 }

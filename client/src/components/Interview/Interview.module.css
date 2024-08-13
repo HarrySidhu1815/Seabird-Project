@@ -13,7 +13,11 @@
 }
 
 @media screen and (max-width: 900px) {
+    .interview{
+        padding: 2rem;
+    }
     .interview h1{
         font-size: 3rem;
+        text-align: center;
     }
 }
