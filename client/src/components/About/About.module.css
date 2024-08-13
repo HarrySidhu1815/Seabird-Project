@@ -1,3 +1,8 @@
 #about-section{
     padding: 10rem 0;
 }
+@media screen and (max-width: 900px) {
+    #about-section{
+        padding: 7rem 0;
+    }
+}
