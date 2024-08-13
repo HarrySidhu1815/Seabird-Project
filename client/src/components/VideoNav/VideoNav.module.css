@@ -31,6 +31,6 @@
 }
 @media screen and (max-width: 900px) {
     .sideFilter{
-        display: none;
+        width: 100vw;
     }
 }

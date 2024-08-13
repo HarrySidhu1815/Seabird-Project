@@ -1,12 +1,27 @@
 .video-section{
     display: flex;
     position: relative;
-    overflow: hidden;  
+    overflow: hidden;
 }
 .restricted {
-    height: 130vh;
+    height: 137vh;
     overflow: hidden;
     position: relative;
+  }
+  .mobFilter{
+    height: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100vw;
+    background-color: #002473;
+    color: #ffffff;
+    display: none;
+    cursor: pointer;
+  }
+
+  .mobFilter h3{
+    font-size: 1.25rem;
+    text-align: center;
   }
 
   .lockPanel {
@@ -26,9 +41,35 @@
     max-height: 100vh;
     overflow: hidden;
   }
+  .deskFilters {
+    display: block;
+  }
+
+.mobFilterNav{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: aqua;
+  display: none;
+  height: auto;
+  z-index: 10;
+}
 
   @media screen and (max-width: 900px) {
     .restricted {
       height: auto;
+    }
+    .video-section{
+      flex-direction: column;
+    }
+    .mobFilter{
+      display: block;
+    }
+    .mobFilterNav{
+      display: flex;
+    }
+    .deskFilters{
+      display: none;
     }
 }
