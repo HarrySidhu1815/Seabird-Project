@@ -1,6 +1,6 @@
 #request-access{
     width: 100%;
-    height: 66.44rem;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,28 +16,28 @@
 
 .header h1{
     font-size: 3rem;
-    letter-spacing: 0.13rem;
 }
 
 .header p{
     width: 70%;
     margin: auto;
     font-size: 1.25rem;
-    height: 9.13rem;
+    height: auto;
 }
 .request-form{
     width: 70%;
-    height: 43.56rem;
+    height: auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     margin: 2rem 0;
+    gap: 1rem;
 }
 
 .name{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     gap: 2rem;
 }
 .input, .name-input, .textarea{
@@ -47,6 +47,7 @@
     background-color: white;
     font-size: 1.25rem;
     padding: 0 2rem;
+    border: none;
 }
 .textarea{
     height: 15.13rem;
@@ -67,5 +68,34 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: none;
     align-self:last baseline;
+}
+
+@media screen and (max-width: 900px) {
+    #request-access{
+        padding: 2rem 0rem;
+    }
+    .header{
+        width: 90%;
+    }
+    .header h1{
+        font-size: 2.25rem;
+    }
+    .request-form{
+        width: 90%;
+    }
+    .name{
+        width: auto;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .name-input{
+        width: auto;
+    }
+    .submit-btn{
+        align-self:center;
+        width: auto;
+        padding: 1.25rem;
+    }
 }
