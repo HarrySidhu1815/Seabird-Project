@@ -26,3 +26,9 @@
     max-height: 100vh;
     overflow: hidden;
   }
+
+  @media screen and (max-width: 900px) {
+    .restricted {
+      height: auto;
+    }
+}
