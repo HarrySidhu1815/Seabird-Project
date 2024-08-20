@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import RequestForm from "../components/RequestForm/RequestForm";
 import Interview from "../components/Interview/Interview";
 import VideoNav from "../components/VideoNav/VideoNav";
 import {
-  DUMMY_DATA,
   getVideosBySpeakers,
   getVideosByTopics,
 } from "../util/video";
@@ -15,9 +14,17 @@ import AccessButton from "../UI/AccessButton";
 export default function Interviews() {
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSpeakers, setSelectedSpeakers] = useState([]);
-  const [selectedVideos, setSelectedVideos] = useState(DUMMY_DATA);
+  const [videos, setVideos] = useState([]);
+  const [selectedVideos, setSelectedVideos] = useState([]);
   const { currentUser } = useSelector((state) => state.user);
   const [showFilters, setShowFilters] = useState(true);
+
+  useEffect(()=> {
+    fetch('/api/videos/').then(response => response.json()).then(data => {
+      setVideos(data.videos)
+      setSelectedVideos(data.videos)
+    })
+  }, [])
 
   function handleFilterTopicChange(topic) {
     const updatedTopics = selectedTopics.includes(topic)
@@ -36,12 +43,12 @@ export default function Interviews() {
   }
 
   function filterVideos(topics, speakers) {
-    let filteredVideos = DUMMY_DATA;
+    let filteredVideos = videos;
     if (topics.length > 0) {
-      filteredVideos = getVideosByTopics(filteredVideos, topics);
+      filteredVideos = getVideosByTopics(videos, topics);
     }
     if (speakers.length > 0) {
-      filteredVideos = getVideosBySpeakers(filteredVideos, speakers);
+      filteredVideos = getVideosBySpeakers(videos, speakers);
     }
     setSelectedVideos(filteredVideos);
   }
@@ -62,6 +69,7 @@ export default function Interviews() {
         </div>
         {showFilters && (<div className={classes.mobFilterNav}><VideoNav
           selectedTopics={selectedTopics}
+          videos={videos}
           selectedSpeakers={selectedSpeakers}
           onTopicChange={handleFilterTopicChange}
           onSpeakerChange={handleFilterSpeakerChange}
@@ -70,6 +78,7 @@ export default function Interviews() {
         <div className={classes.deskFilters}>
         <VideoNav
           selectedTopics={selectedTopics}
+          videos={videos}
           selectedSpeakers={selectedSpeakers}
           onTopicChange={handleFilterTopicChange}
           onSpeakerChange={handleFilterSpeakerChange}
@@ -82,7 +91,7 @@ export default function Interviews() {
           <AccessButton />
         </div>
       )}
-      <RequestForm />
+      {!currentUser && <RequestForm />}
     </div>
   );
 }

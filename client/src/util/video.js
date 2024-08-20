@@ -77,14 +77,14 @@ export const getAllTopics = (data) => {
 };
 
 export const getAllSpeakers = (data) => {
-    const speakers = data.flatMap(video => video.speaker);
+    const speakers = data.flatMap(video => video.speakers);
     return [...new Set(speakers)];
 };
 
 export const getVideosByTopics = (data, selectedTopics) => {
-    return DUMMY_DATA.filter(video => selectedTopics.includes(video.topic));
+    return data.filter(video => selectedTopics.includes(video.topic));
 };
 
 export const getVideosBySpeakers = (data, selectedSpeakers) => {
-    return DUMMY_DATA.filter(video => video.speaker.some(speaker => selectedSpeakers.includes(speaker)));
+    return data.filter(video => video.speakers.some(speaker => selectedSpeakers.includes(speaker)));
 };

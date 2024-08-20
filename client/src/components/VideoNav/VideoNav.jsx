@@ -7,9 +7,10 @@ export default function VideoNav({
   selectedSpeakers,
   onTopicChange,
   onSpeakerChange,
+  videos
 }) {
-  const allTopics = getAllTopics(DUMMY_DATA);
-  const allspeakers = getAllSpeakers(DUMMY_DATA);
+  const allTopics = getAllTopics(videos);
+  const allspeakers = getAllSpeakers(videos);
 
   return (
     <div className={classes.sideFilter}>

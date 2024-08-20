@@ -2,6 +2,7 @@
     width: 25vw;
     background-color: #002473;
     color: #ffffff;
+    height: 100%;
 }
 
 .topic-filter, .speaker-filter{
