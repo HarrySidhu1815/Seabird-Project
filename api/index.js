@@ -3,6 +3,7 @@ import mongoose from 'mongoose'
 import dotenv from 'dotenv'
 import userRoutes from './routes/user.routes.js'
 import authRoutes from './routes/auth.routes.js'
+import videoRoutes from './routes/video.routes.js'
 dotenv.config()
 
 const app = express()
@@ -22,6 +23,7 @@ app.listen(PORT, () => {
 
 app.use('/api/user', userRoutes)
 app.use('/api/auth' , authRoutes)
+app.use('/api/videos' , videoRoutes)
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500
