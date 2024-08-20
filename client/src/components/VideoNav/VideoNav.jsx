@@ -16,11 +16,10 @@ export default function VideoNav({
   const [showTopic, setShowTopic] = useState(false);
   const [showSpeakers, setShowSpeakers] = useState(false);
 
-  function handleSortByTopic() {}
   return (
     <div className={classes.sideFilter}>
       <div className={classes["topic-filter"]}>
-        <h3>
+      {mobile ? (<h3>
           Sort by Topic{" "}
           <span
             onClick={() => {
@@ -29,9 +28,20 @@ export default function VideoNav({
           >
             V
           </span>
-        </h3>
-        {showTopic &&
+        </h3>) : (<h3>Sort by Topic</h3>)}
+        
+        {mobile ? showTopic &&
           allTopics.map((topic, index) => (
+            <div key={index}>
+              <input
+                id="selectedTopic"
+                type="checkbox"
+                onChange={() => onTopicChange(topic)}
+                checked={selectedTopics.includes(topic)}
+              />
+              <label htmlFor="selectedTopic">{topic}</label>
+            </div>
+          )) : allTopics.map((topic, index) => (
             <div key={index}>
               <input
                 id="selectedTopic"
@@ -46,16 +56,28 @@ export default function VideoNav({
       <div className={classes["speaker-filter"]}>
         <h3>
           Sort by Speaker(s){" "}
-          <span
+          {mobile && (<span
             onClick={() => {
               setShowSpeakers((prevState) => !prevState);
             }}
           >
             V
-          </span>
+          </span>) }
+          
         </h3>
-        {showSpeakers &&
+        {mobile ? showSpeakers &&
           allspeakers.map((speaker, index) => (
+            <div key={index}>
+              <input
+                id="selectedSpeaker"
+                type="checkbox"
+                onChange={() => onSpeakerChange(speaker)}
+                checked={selectedSpeakers.includes(speaker)}
+                name="speakers"
+              />
+              <label htmlFor="selectedSpeaker">{speaker}</label>
+            </div>
+          )) : allspeakers.map((speaker, index) => (
             <div key={index}>
               <input
                 id="selectedSpeaker"

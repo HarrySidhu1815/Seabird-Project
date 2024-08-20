@@ -96,6 +96,7 @@ export default function Interviews() {
             selectedSpeakers={selectedSpeakers}
             onTopicChange={handleFilterTopicChange}
             onSpeakerChange={handleFilterSpeakerChange}
+            mobile={false}
           />
         </div>
         <BrowseVideo videos={selectedVideos} />
