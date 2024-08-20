@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import RequestForm from "../components/RequestForm/RequestForm";
 import Interview from "../components/Interview/Interview";
 import VideoNav from "../components/VideoNav/VideoNav";
-import {
-  getVideosBySpeakers,
-  getVideosByTopics,
-} from "../util/video";
+import { getVideosBySpeakers, getVideosByTopics } from "../util/video";
 import BrowseVideo from "../components/BrowseVideo/BrowseVideo";
 import classes from "./Interviews.module.css";
 import { useSelector } from "react-redux";
 import AccessButton from "../UI/AccessButton";
+import CancelButton from "../components/Icons/cancel";
 
 export default function Interviews() {
   const [selectedTopics, setSelectedTopics] = useState([]);
@@ -17,14 +15,16 @@ export default function Interviews() {
   const [videos, setVideos] = useState([]);
   const [selectedVideos, setSelectedVideos] = useState([]);
   const { currentUser } = useSelector((state) => state.user);
-  const [showFilters, setShowFilters] = useState(true);
+  const [showFilters, setShowFilters] = useState(false);
 
-  useEffect(()=> {
-    fetch('/api/videos/').then(response => response.json()).then(data => {
-      setVideos(data.videos)
-      setSelectedVideos(data.videos)
-    })
-  }, [])
+  useEffect(() => {
+    fetch("/api/videos/")
+      .then((response) => response.json())
+      .then((data) => {
+        setVideos(data.videos);
+        setSelectedVideos(data.videos);
+      });
+  }, []);
 
   function handleFilterTopicChange(topic) {
     const updatedTopics = selectedTopics.includes(topic)
@@ -65,24 +65,38 @@ export default function Interviews() {
           className={classes.mobFilter}
           onClick={() => setShowFilters((prevState) => !prevState)}
         >
-          <h3>Sort & Filter</h3>
+          {!showFilters ? (
+            <h3>Sort & Filter</h3>
+          ) : (
+            <div className={classes.openNav}>
+              <div>
+                <CancelButton />
+              </div>
+              <h3>Sort & Filter</h3>
+              <p>Done</p>
+            </div>
+          )}
         </div>
-        {showFilters && (<div className={classes.mobFilterNav}><VideoNav
-          selectedTopics={selectedTopics}
-          videos={videos}
-          selectedSpeakers={selectedSpeakers}
-          onTopicChange={handleFilterTopicChange}
-          onSpeakerChange={handleFilterSpeakerChange}
-        /></div>)
-        }
+        {showFilters && (
+          <div className={classes.mobFilterNav}>
+            <VideoNav
+              selectedTopics={selectedTopics}
+              videos={videos}
+              selectedSpeakers={selectedSpeakers}
+              onTopicChange={handleFilterTopicChange}
+              onSpeakerChange={handleFilterSpeakerChange}
+              mobile={true}
+            />
+          </div>
+        )}
         <div className={classes.deskFilters}>
-        <VideoNav
-          selectedTopics={selectedTopics}
-          videos={videos}
-          selectedSpeakers={selectedSpeakers}
-          onTopicChange={handleFilterTopicChange}
-          onSpeakerChange={handleFilterSpeakerChange}
-        />
+          <VideoNav
+            selectedTopics={selectedTopics}
+            videos={videos}
+            selectedSpeakers={selectedSpeakers}
+            onTopicChange={handleFilterTopicChange}
+            onSpeakerChange={handleFilterSpeakerChange}
+          />
         </div>
         <BrowseVideo videos={selectedVideos} />
       </div>

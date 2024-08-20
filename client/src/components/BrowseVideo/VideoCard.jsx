@@ -9,38 +9,36 @@ export default function VideoCard({video}) {
   //   threshold: 0.5,  
   // });
 
-  const videoRef = useRef(null);
-  const canvasRef = useRef(null);
-  const [thumbnail, setThumbnail] = useState(null);
+  // const videoRef = useRef(null);
+  // const canvasRef = useRef(null);
+  // const [thumbnail, setThumbnail] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  useEffect(() => {
-    const videoElement = videoRef.current;
-    const canvasElement = canvasRef.current;
-    const context = canvasElement.getContext('2d');
+  // useEffect(() => {
+  //   const videoElement = videoRef.current;
+  //   const canvasElement = canvasRef.current;
+  //   const context = canvasElement.getContext('2d');
 
-    videoElement.onloadeddata = () => {
-      videoElement.currentTime = 2;
-    };
+  //   videoElement.onloadeddata = () => {
+  //     videoElement.currentTime = 2;
+  //   };
 
-    videoElement.onseeked = () => {
-      context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
-      const thumbnailURL = canvasElement.toDataURL('image/png');
-      setThumbnail(thumbnailURL);
-    };
-  }, []);
+  //   videoElement.onseeked = () => {
+  //     context.drawImage(videoElement, 0, 0, canvasElement.width, canvasElement.height);
+  //     const thumbnailURL = canvasElement.toDataURL('image/png');
+  //     setThumbnail(thumbnailURL);
+  //   };
+  // }, []);
  
   return (
     <div className={classes['card-container']}>
       {!isPlaying ? (
-        thumbnail ? (
         <img
-          src={thumbnail}
+          src={'thumbnail'}
           alt={video.title}
           onClick={() => setIsPlaying(true)}
           className={classes.img}
-        />) : 
-        (<p>Loading ThumbNail</p>)
+        />
       ) : (
         <ReactPlayer
           className={classes.img}
@@ -54,8 +52,8 @@ export default function VideoCard({video}) {
         <h2>{video.title}</h2>
         <p><i>{video.topic}</i><br/>Features: {video.speakers.join(', ')}</p>
       </div>
-      <video ref={videoRef} src={video.videoUrl} style={{ display: 'none' }} />
-      <canvas ref={canvasRef} style={{ display: 'none' }} />
+      {/* <video ref={videoRef} src={video.videoUrl} style={{ display: 'none' }} />
+      <canvas ref={canvasRef} style={{ display: 'none' }} /> */}
     </div>
   )
 }
