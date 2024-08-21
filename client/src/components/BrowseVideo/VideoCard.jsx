@@ -1,12 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react'
-import classes from './VideoCard.module.css'
-import { useInView } from 'react-intersection-observer';
-import ReactPlayer from 'react-player';
+import React, { useEffect, useRef, useState } from "react";
+import classes from "./VideoCard.module.css";
+import { useInView } from "react-intersection-observer";
+import ReactPlayer from "react-player";
+import Modal from "../../UI/Modal";
+import CancelButton from "../Icons/cancel";
 
-export default function VideoCard({video}) {
+export default function VideoCard({ video }) {
   // const { ref, inView } = useInView({
   //   triggerOnce: true,
-  //   threshold: 0.5,  
+  //   threshold: 0.5,
   // });
 
   // const videoRef = useRef(null);
@@ -29,31 +31,47 @@ export default function VideoCard({video}) {
   //     setThumbnail(thumbnailURL);
   //   };
   // }, []);
- 
+  function handleCloseButton(){
+    setIsPlaying(false)
+  }
   return (
-    <div className={classes['card-container']}>
-      {!isPlaying ? (
-        <img
-          src={'thumbnail'}
-          alt={video.title}
-          onClick={() => setIsPlaying(true)}
-          className={classes.img}
-        />
-      ) : (
-        <ReactPlayer
-          className={classes.img}
-          url={video.videoUrl}
-          controls={true}
-          height='60%'
-          width='100%' 
-        />
+    <div className={classes["card-container"]}>
+      <img
+        src={"thumbnail"}
+        alt={video.title}
+        onClick={() => setIsPlaying(true)}
+        className={classes.img}
+      />
+      {isPlaying && (
+        <Modal className={classes.VideoModal}>
+          <div onClick={handleCloseButton}>
+            <CancelButton />
+          </div>
+          <ReactPlayer
+            className={classes.video}
+            url={video.videoUrl}
+            controls={true}
+            height='auto'
+            width="100%"
+          />
+          <h2>{video.title}</h2>
+          <p>
+            <i>{video.topic}</i>
+            <br />
+            Features: {video.speakers.join(", ")}
+          </p>
+        </Modal>
       )}
-      <div className={classes['card-decription']}>
+      <div className={classes["card-decription"]}>
         <h2>{video.title}</h2>
-        <p><i>{video.topic}</i><br/>Features: {video.speakers.join(', ')}</p>
+        <p>
+          <i>{video.topic}</i>
+          <br />
+          Features: {video.speakers.join(", ")}
+        </p>
       </div>
       {/* <video ref={videoRef} src={video.videoUrl} style={{ display: 'none' }} />
       <canvas ref={canvasRef} style={{ display: 'none' }} /> */}
     </div>
-  )
+  );
 }
