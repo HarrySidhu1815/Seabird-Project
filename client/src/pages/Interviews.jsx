@@ -112,11 +112,11 @@ export default function Interviews() {
             />
           )}
         </div>
-        {isError && <ErrorBlock message={isError} handleClose={handleClose} />}
+        {isError && <ErrorBlock message={isError}/>}
         {isPending ? (
           <p>Loading the videos....</p>
         ) : (
-          <BrowseVideo videos={data} />
+          <BrowseVideo videos={selectedVideos} />
         )}
       </div>
       {!currentUser && (
