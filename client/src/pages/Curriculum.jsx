@@ -1,7 +1,7 @@
 import React from 'react'
 import CurriculumHeader from '../components/CurriculumHeader/CurriculumHeader'
 import Resource from '../components/Resource/Resource'
-import classes from './Interviews.module.css'
+import classes from './pages.module.css'
 import { useSelector } from 'react-redux'
 import AccessButton from '../UI/AccessButton'
 

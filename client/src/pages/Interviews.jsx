@@ -1,29 +1,39 @@
 import React, { useEffect, useState } from "react";
 import RequestForm from "../components/RequestForm/RequestForm";
-import Interview from "../components/Interview/Interview";
 import VideoNav from "../components/VideoNav/VideoNav";
 import { getVideosBySpeakers, getVideosByTopics } from "../util/video";
 import BrowseVideo from "../components/BrowseVideo/BrowseVideo";
-import classes from "./Interviews.module.css";
+import classes from "./pages.module.css";
 import { useSelector } from "react-redux";
 import AccessButton from "../UI/AccessButton";
 import CancelButton from "../components/Icons/cancel";
+import ErrorBlock from "../UI/ErrorBlock";
 
 export default function Interviews() {
+  const { currentUser } = useSelector((state) => state.user);
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSpeakers, setSelectedSpeakers] = useState([]);
   const [videos, setVideos] = useState([]);
   const [selectedVideos, setSelectedVideos] = useState([]);
-  const { currentUser } = useSelector((state) => state.user);
   const [showFilters, setShowFilters] = useState(false);
+  const [isError, setIsError] = useState(null);
 
   useEffect(() => {
     fetch("/api/videos/")
-      .then((response) => response.json())
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+
+        return response.json().then((data) => {
+          console.log(data.message);
+        });
+      })
       .then((data) => {
         setVideos(data.videos);
         setSelectedVideos(data.videos);
-      });
+      })
+      .catch((error) => console.log(error));
   }, []);
 
   function handleFilterTopicChange(topic) {
@@ -53,9 +63,16 @@ export default function Interviews() {
     setSelectedVideos(filteredVideos);
   }
 
+  function handleClose() {
+    setIsError(null);
+  }
+
   return (
     <div>
-      <Interview />
+      {isError && <ErrorBlock message={isError} handleClose={handleClose} />}
+      <div className={classes.interview}>
+        <h1>Elder Interviews</h1>
+      </div>
       <div
         className={`${classes["video-section"]} ${
           !currentUser ? classes["restricted"] : ""
