@@ -10,8 +10,11 @@ import CancelButton from "../components/Icons/cancel";
 import ErrorBlock from "../UI/ErrorBlock";
 import { useQuery } from "@tanstack/react-query";
 import { fetchVideos } from "../util/http";
+import { useNavigate } from "react-router-dom";
 
 export default function Interviews() {
+  const navigate = useNavigate()
+
   const { currentUser } = useSelector((state) => state.user);
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSpeakers, setSelectedSpeakers] = useState([]);
@@ -52,9 +55,9 @@ export default function Interviews() {
     setSelectedVideos(filteredVideos);
   }
 
-  // function handleClose() {
-  //   ;
-  // }
+  function handleClose() {
+    navigate('../')
+  }
 
   return (
     <div>
@@ -112,7 +115,7 @@ export default function Interviews() {
             />
           )}
         </div>
-        {isError && <ErrorBlock message={isError}/>}
+        {isError && <ErrorBlock message={isError} handleClose={handleClose}/>}
         {isPending ? (
           <p>Loading the videos....</p>
         ) : (
