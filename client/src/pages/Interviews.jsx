@@ -8,33 +8,22 @@ import { useSelector } from "react-redux";
 import AccessButton from "../UI/AccessButton";
 import CancelButton from "../components/Icons/cancel";
 import ErrorBlock from "../UI/ErrorBlock";
+import { useQuery } from "@tanstack/react-query";
+import { fetchVideos } from "../util/http";
 
 export default function Interviews() {
   const { currentUser } = useSelector((state) => state.user);
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSpeakers, setSelectedSpeakers] = useState([]);
-  const [videos, setVideos] = useState([]);
   const [selectedVideos, setSelectedVideos] = useState([]);
   const [showFilters, setShowFilters] = useState(false);
-  const [isError, setIsError] = useState(null);
+  // const [videos, setVideos] = useState([]);
+  // const [isError, setIsError] = useState(null);
 
-  useEffect(() => {
-    fetch("/api/videos/")
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        }
-
-        return response.json().then((data) => {
-          console.log(data.message);
-        });
-      })
-      .then((data) => {
-        setVideos(data.videos);
-        setSelectedVideos(data.videos);
-      })
-      .catch((error) => console.log(error));
-  }, []);
+  const { data, isError, isPending } = useQuery({
+    queryKey: ["videos"],
+    queryFn: fetchVideos,
+  });
 
   function handleFilterTopicChange(topic) {
     const updatedTopics = selectedTopics.includes(topic)
@@ -53,23 +42,22 @@ export default function Interviews() {
   }
 
   function filterVideos(topics, speakers) {
-    let filteredVideos = videos;
+    let filteredVideos = data;
     if (topics.length > 0) {
-      filteredVideos = getVideosByTopics(videos, topics);
+      filteredVideos = getVideosByTopics(data, topics);
     }
     if (speakers.length > 0) {
-      filteredVideos = getVideosBySpeakers(videos, speakers);
+      filteredVideos = getVideosBySpeakers(data, speakers);
     }
     setSelectedVideos(filteredVideos);
   }
 
-  function handleClose() {
-    setIsError(null);
-  }
+  // function handleClose() {
+  //   ;
+  // }
 
   return (
     <div>
-      {isError && <ErrorBlock message={isError} handleClose={handleClose} />}
       <div className={classes.interview}>
         <h1>Elder Interviews</h1>
       </div>
@@ -96,27 +84,40 @@ export default function Interviews() {
         </div>
         {showFilters && (
           <div className={classes.mobFilterNav}>
-            <VideoNav
-              selectedTopics={selectedTopics}
-              videos={videos}
-              selectedSpeakers={selectedSpeakers}
-              onTopicChange={handleFilterTopicChange}
-              onSpeakerChange={handleFilterSpeakerChange}
-              mobile={true}
-            />
+            {isPending ? (
+              <p>Loading the filters</p>
+            ) : (
+              <VideoNav
+                selectedTopics={selectedTopics}
+                videos={data}
+                selectedSpeakers={selectedSpeakers}
+                onTopicChange={handleFilterTopicChange}
+                onSpeakerChange={handleFilterSpeakerChange}
+                mobile={true}
+              />
+            )}
           </div>
         )}
         <div className={classes.deskFilters}>
-          <VideoNav
-            selectedTopics={selectedTopics}
-            videos={videos}
-            selectedSpeakers={selectedSpeakers}
-            onTopicChange={handleFilterTopicChange}
-            onSpeakerChange={handleFilterSpeakerChange}
-            mobile={false}
-          />
+          {isPending ? (
+            <p>Loading the filters</p>
+          ) : (
+            <VideoNav
+              selectedTopics={selectedTopics}
+              videos={data}
+              selectedSpeakers={selectedSpeakers}
+              onTopicChange={handleFilterTopicChange}
+              onSpeakerChange={handleFilterSpeakerChange}
+              mobile={false}
+            />
+          )}
         </div>
-        <BrowseVideo videos={selectedVideos} />
+        {isError && <ErrorBlock message={isError} handleClose={handleClose} />}
+        {isPending ? (
+          <p>Loading the videos....</p>
+        ) : (
+          <BrowseVideo videos={data} />
+        )}
       </div>
       {!currentUser && (
         <div className={classes.lockPanel}>

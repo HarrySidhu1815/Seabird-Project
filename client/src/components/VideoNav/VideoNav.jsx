@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import classes from "./VideoNav.module.css";
-import { DUMMY_DATA, getAllSpeakers, getAllTopics } from "../../util/video";
+import { getAllSpeakers, getAllTopics } from "../../util/video";
 
 export default function VideoNav({
   selectedTopics,
