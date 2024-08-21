@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 import AccessButton from "../UI/AccessButton";
 import CancelButton from "../components/Icons/cancel";
 import ErrorBlock from "../UI/ErrorBlock";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery } from "@tanstack/react-query";
 import { fetchVideos } from "../util/http";
 import { useNavigate } from "react-router-dom";
 
@@ -27,6 +27,12 @@ export default function Interviews() {
     queryKey: ["videos"],
     queryFn: fetchVideos,
   });
+
+  useEffect(() => {
+    if (data) {
+      setSelectedVideos(data);
+    }
+  }, [data]);
 
   function handleFilterTopicChange(topic) {
     const updatedTopics = selectedTopics.includes(topic)
