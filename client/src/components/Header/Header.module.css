@@ -103,10 +103,15 @@
     .header{
         padding: 0 1.25rem;
     }
+    .logout-modal{
+        height: 60vh;
+        width: 50%;
+    }
 }
 
 .logout-modal{
     width: 30%;
+    min-width: 20rem;
     top: 10vh;
     margin: auto;
     height: 10rem;

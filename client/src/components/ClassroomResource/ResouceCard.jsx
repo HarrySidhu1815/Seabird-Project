@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './ResourceCard.module.css'
 
-export default function ResouceCard({title, description}) {
+export default function ResouceCard({title, description, image}) {
   return (
     <div className={classes.card}>
-      <img className={classes.image}/>
+      <img className={classes.image} src={image} alt={title}/>
       <div className={classes['card-desc']}>
         <h2>{title}</h2>
         <p>{description}</p>
