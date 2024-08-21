@@ -14,7 +14,7 @@ export default function Header() {
   const navigate = useNavigate()
 
   async function handleLogout() {
-    setShowMenu(false)
+    setShowModal(false)
     await fetch('/api/auth/signout')
       dispatch(signout())
   }
