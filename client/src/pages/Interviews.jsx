@@ -45,7 +45,7 @@ export default function Interviews() {
   }
 
   function filterVideos(topics, speakers) {
-    let filteredVideos = data;
+    let filteredVideos = data || [];
     if (topics.length > 0) {
       filteredVideos = getVideosByTopics(data, topics);
     }
@@ -87,9 +87,7 @@ export default function Interviews() {
         </div>
         {showFilters && (
           <div className={classes.mobFilterNav}>
-            {isPending ? (
-              <p>Loading the filters</p>
-            ) : (
+            {data && (
               <VideoNav
                 selectedTopics={selectedTopics}
                 videos={data}
@@ -102,9 +100,7 @@ export default function Interviews() {
           </div>
         )}
         <div className={classes.deskFilters}>
-          {isPending ? (
-            <p>Loading the filters</p>
-          ) : (
+          {data && (
             <VideoNav
               selectedTopics={selectedTopics}
               videos={data}
@@ -115,12 +111,13 @@ export default function Interviews() {
             />
           )}
         </div>
+
         {isError && <ErrorBlock message={isError} handleClose={handleClose}/>}
-        {isPending ? (
-          <p>Loading the videos....</p>
-        ) : (
-          <BrowseVideo videos={selectedVideos} />
-        )}
+
+        {isPending && (<p>Loading the videos....</p>)} 
+
+        {data && <BrowseVideo videos={selectedVideos} />}
+
       </div>
       {!currentUser && (
         <div className={classes.lockPanel}>
