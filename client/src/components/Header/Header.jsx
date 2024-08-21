@@ -4,18 +4,30 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { signout } from '../../redux/user/userSlice'
 import menu from '../../assets/burgerMenu.png'
+import Modal from '../../UI/Modal'
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false)
+  const [showModal, setShowModal] = useState(false)
   const {currentUser} = useSelector((state) => state.user)
   const dispatch = useDispatch()
   const navigate = useNavigate()
 
-  async function handleButtonClick(){
+  async function handleLogout() {
+    await fetch('/api/auth/signout')
+      dispatch(signout())
+    setShowMenu(false)
+  }
+
+  function handleCancel(){
+    setShowModal(false)
+    navigate("../");
+  }
+
+  function handleButtonClick(){
     setShowMenu(false)
     if(currentUser){
-      await fetch('/api/auth/signout')
-      dispatch(signout())
+      setShowModal(true)
     } else {
       navigate('/login')
     }
@@ -24,6 +36,14 @@ export default function Header() {
   const bgColor = currentUser ? classes.loggedInAccount : classes.notLoggedInAccount
   return (
     <header className={classes.header}>
+      {showModal && (
+        <Modal className={classes['logout-modal']}>
+        <h2>Are you really want to logout?</h2>
+        <div className={classes.controls}>
+          <button onClick={handleCancel}>Cancel</button>
+          <button className={`${classes['login-btn']} ${classes['loggedInAccount']}`} onClick={handleLogout}>Logout</button>
+        </div>
+      </Modal>)}
       <div className={classes.logo}><Link to='/'>Seabird Curriculum Resources</Link></div>
       <nav className={classes.nav}>
         <ul className={classes.desktopMenu}>

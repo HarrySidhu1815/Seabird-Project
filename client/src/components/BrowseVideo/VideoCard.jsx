@@ -43,7 +43,7 @@ export default function VideoCard({ video }) {
         className={classes.img}
       />
       {isPlaying && (
-        <Modal className={classes.VideoModal}>
+        <Modal className={classes.VideoModal} onClose={handleCloseButton}>
           <div onClick={handleCloseButton}>
             <CancelButton />
           </div>

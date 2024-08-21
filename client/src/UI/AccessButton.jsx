@@ -1,5 +1,5 @@
 import React from 'react'
-import lockImg from '../assets/lock.png'
+import lockImg from '../assets/lock.svg'
 import loggedInImg from '../assets/loggedIn.png'
 import classes from './AccessButton.module.css'
 import { useSelector } from 'react-redux'

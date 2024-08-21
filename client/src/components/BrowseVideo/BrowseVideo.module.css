@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin: 1rem auto;
   }
   
   .pagination-controls button {

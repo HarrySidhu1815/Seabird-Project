@@ -104,3 +104,30 @@
         padding: 0 1.25rem;
     }
 }
+
+.logout-modal{
+    width: 30%;
+    top: 10vh;
+    margin: auto;
+    height: 10rem;
+    padding: 2rem;
+    background: #ffffff;
+}
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.controls button{
+    width: 7.56rem;
+    height: 2.69rem;
+    border-radius: 1.63rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
