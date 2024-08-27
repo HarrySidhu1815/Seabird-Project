@@ -8,68 +8,71 @@ import { useSelector } from "react-redux";
 import AccessButton from "../UI/AccessButton";
 import CancelButton from "../components/Icons/cancel";
 import ErrorBlock from "../UI/ErrorBlock";
-import { useQuery } from "@tanstack/react-query";
 import { fetchVideos } from "../util/http";
-import { useNavigate } from "react-router-dom";
+import Loading from "../UI/Loading";
 
 export default function Interviews() {
-  const navigate = useNavigate()
 
   const { currentUser } = useSelector((state) => state.user);
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSpeakers, setSelectedSpeakers] = useState([]);
   const [selectedVideos, setSelectedVideos] = useState([]);
   const [showFilters, setShowFilters] = useState(false);
-  // const [videos, setVideos] = useState([]);
-  // const [isError, setIsError] = useState(null);
 
-  const { data, isError, isPending } = useQuery({
-    queryKey: ["videos"],
-    queryFn: fetchVideos,
-  });
+  const [videos, setVideos] = useState();
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState();
 
   useEffect(() => {
-    if (data) {
-      setSelectedVideos(data);
+    async function fetchVideo() {
+      setIsLoading(true);
+      const response = await fetch("/api/videos", {
+        method: "POST",
+        body: JSON.stringify({
+          user: currentUser
+        }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setError(data.message);
+        setIsLoading(false);
+        return;
+      }
+
+      setVideos(data.videos);
+      setSelectedVideos(data.videos)
+      setIsLoading(false);
     }
-  }, [data]);
 
-  function handleFilterTopicChange(topic) {
-    const updatedTopics = selectedTopics.includes(topic)
-      ? selectedTopics.filter((t) => t !== topic)
-      : [...selectedTopics, topic];
-    setSelectedTopics(updatedTopics);
-    filterVideos(updatedTopics, selectedSpeakers);
+    fetchVideo();
+  }, []);
+
+  function handleErrorClose() {
+    setError(null);
   }
 
-  function handleFilterSpeakerChange(speaker) {
-    const updatedSpeakers = selectedSpeakers.includes(speaker)
-      ? selectedSpeakers.filter((s) => s !== speaker)
-      : [...selectedSpeakers, speaker];
-    setSelectedSpeakers(updatedSpeakers);
-    filterVideos(selectedTopics, updatedSpeakers);
+  let content
+
+  if (isLoading) {
+    content = <Loading />
   }
 
-  function filterVideos(topics, speakers) {
-    let filteredVideos = data || [];
-    if (topics.length > 0) {
-      filteredVideos = getVideosByTopics(data, topics);
-    }
-    if (speakers.length > 0) {
-      filteredVideos = getVideosBySpeakers(data, speakers);
-    }
-    setSelectedVideos(filteredVideos);
+  if (error) {
+    content = (
+      <>
+        {error && <ErrorBlock message={error} handleClose={handleErrorClose} />}
+        <p>Error Occurred</p>
+      </>
+    );
   }
 
-  function handleClose() {
-    navigate('../')
-  }
-
-  return (
-    <div>
-      <div className={classes.interview}>
-        <h1>Elder Interviews</h1>
-      </div>
+  if(videos){
+    content = (
       <div
         className={`${classes["video-section"]} ${
           !currentUser ? classes["restricted"] : ""
@@ -93,38 +96,83 @@ export default function Interviews() {
         </div>
         {showFilters && (
           <div className={classes.mobFilterNav}>
-            {data && (
               <VideoNav
                 selectedTopics={selectedTopics}
-                videos={data}
+                videos={videos}
                 selectedSpeakers={selectedSpeakers}
                 onTopicChange={handleFilterTopicChange}
                 onSpeakerChange={handleFilterSpeakerChange}
                 mobile={true}
               />
-            )}
           </div>
         )}
         <div className={classes.deskFilters}>
-          {data && (
+          (
             <VideoNav
               selectedTopics={selectedTopics}
-              videos={data}
+              videos={videos}
               selectedSpeakers={selectedSpeakers}
               onTopicChange={handleFilterTopicChange}
               onSpeakerChange={handleFilterSpeakerChange}
               mobile={false}
             />
-          )}
+          )
         </div>
-
-        {isError && <ErrorBlock message={isError} handleClose={handleClose}/>}
-
-        {isPending && (<p>Loading the videos....</p>)} 
-
-        {data && <BrowseVideo videos={selectedVideos} />}
-
+        
+        <BrowseVideo videos={selectedVideos} />
       </div>
+    )
+  }
+
+  function handleFilterTopicChange(topic) {
+    const updatedTopics = selectedTopics.includes(topic)
+      ? selectedTopics.filter((t) => t !== topic)
+      : [...selectedTopics, topic];
+    setSelectedTopics(updatedTopics);
+    filterVideos(updatedTopics, selectedSpeakers);
+  }
+
+  function handleFilterSpeakerChange(speaker) {
+    const updatedSpeakers = selectedSpeakers.includes(speaker)
+      ? selectedSpeakers.filter((s) => s !== speaker)
+      : [...selectedSpeakers, speaker];
+    setSelectedSpeakers(updatedSpeakers);
+    filterVideos(selectedTopics, updatedSpeakers);
+  }
+
+  function filterVideos(topics, speakers) {
+    let filteredVideos = videos || [];
+    if (topics.length > 0) {
+      filteredVideos = getVideosByTopics(videos, topics);
+    }
+    if (speakers.length > 0) {
+      filteredVideos = getVideosBySpeakers(videos, speakers);
+    }
+    setSelectedVideos(filteredVideos);
+  }
+
+
+  return (
+    <div>
+      <div className={classes.interview}>
+        <h1>Elder Interviews</h1>
+        <p>
+          The 99 videos that appear here were recorded during the later stages
+          of the Covid pandemic. They were conducted as part of a series of
+          interconnected research projects that Prof. Keith Carlson was invited
+          to undertake into the history and culture of the Seabird Island
+          community.<br/><br/> The Knowledge Keepers who shared their stories with Prof.
+          Carlson requested that the interviews be made available to Seabird
+          youth and educators.<br/><br/> Dr. Alessandro Tarsia stitched together the 99
+          mini documentary films and organized them around different themes.
+          People can search the videos either by topic or by the names of the
+          Elders and Knowledge Keepers who appear in the videos.<br/><br/> UFV BMO
+          Collaboratorium students built curriculum resources, including
+          teacher’s guides and lesson plans, that connect directly to the
+          Elders’ voices in the videos.
+        </p>
+      </div>
+      {content}
       {!currentUser && (
         <div className={classes.lockPanel}>
           <AccessButton />

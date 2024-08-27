@@ -4,6 +4,7 @@ import dotenv from 'dotenv'
 import userRoutes from './routes/user.routes.js'
 import authRoutes from './routes/auth.routes.js'
 import videoRoutes from './routes/video.routes.js'
+import resourceRoutes from './routes/resource.routes.js'
 import cookieParser from 'cookie-parser'
 import path from 'path'
 dotenv.config()
@@ -36,6 +37,7 @@ app.listen(PORT, () => {
 app.use('/api/user', userRoutes)
 app.use('/api/auth' , authRoutes)
 app.use('/api/videos' , videoRoutes)
+app.use('/api/resources' , resourceRoutes)
 
 app.use((err, req, res, next) => {
     const statusCode = err.statusCode || 500

@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import SignUp from './pages/SignUp'
+import OtherResource from './pages/OtherResource'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path='/' element={<Home />} />
         <Route path='/interviews' element={<Interviews />} />
         <Route path='/curriculum' element={<Curriculum />} />
+        <Route path='/resources' element={<OtherResource />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
       </Routes>

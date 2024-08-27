@@ -2,6 +2,7 @@
     height: 37.5rem;
     width: 100%;
     max-width: 25rem;
+    min-width: 25rem;
     background-color: #80d8ff;
     border-radius: 2rem;
 }

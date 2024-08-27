@@ -5,52 +5,32 @@ import { useSelector } from 'react-redux';
 
 export default function BrowseVideo({videos}) {
   const {currentUser} = useSelector((state) => state.user)
-  const [currentPage, setCurrentPage] = useState(1)
+  const [videosToShow, setVideosToShow] = useState(16)
 
-  const videoPersPage = 16
-  const indexOfLastVideo = currentPage * videoPersPage
-  const indexOfFirstVideo = indexOfLastVideo - videoPersPage
-  const currentVideos = videos.slice(indexOfFirstVideo, indexOfLastVideo)
-
-  const totalPages = Math.ceil(videos.length/ videoPersPage)
-
-  function handlePreviousPage(){
-    if(currentPage > 1){
-      setCurrentPage(prevPage => prevPage - 1 )
-    }
+  function handleLoadMore() {
+    setVideosToShow((prevCount) => prevCount + 16); // Load 16 more videos
   }
 
-  function handleNextPage(){
-    if(currentPage < totalPages){
-      setCurrentPage(prevPage => prevPage + 1 )
-    }
-  }
 
-  const maxVideosToShow = currentUser ? currentVideos.length : 4;
+  const videosToDisplay = currentUser
+    ? videos.slice(0, videosToShow)
+    : videos.slice(0, 4);
 
   return (
     <div className={classes['video-section']}>
         <h1>Browse Videos</h1>
         <div className={classes.content}>
-        {currentVideos.length > 0 ? (
-        currentVideos.slice(0, maxVideosToShow).map((video) => (
+        {videosToDisplay.length > 0 ? (
+        videosToDisplay.map((video) => (
           <VideoCard key={video.id} video={video} />
         ))
       ) : (
         <p>No videos found</p>
       )}
+        {currentUser && videosToShow < videos.length && (
+          <p className={classes["load-more-controls"]} onClick={handleLoadMore}>Load More</p>
+      )}
         </div>
-        <div className={classes['pagination-controls']}>
-        <button onClick={handlePreviousPage} disabled={currentPage === 1}>
-          Previous
-        </button>
-        <span>
-          Page {currentPage} of {totalPages}
-        </span>
-        <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-          Next
-        </button>
-      </div>
     </div>
   )
 }

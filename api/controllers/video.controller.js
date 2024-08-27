@@ -2,9 +2,11 @@ import Video from "../models/video.model.js";
 import { errorHandler } from "../utils/error.js";
 
 export const getAllVideos = async (req, res, next) => {
-  if (req.method === "GET") {
+  if (req.method === "POST") {
+    const isAuthorized = req.body.user ? true : false
+
     try {
-      const videos = await Video.find();
+      const videos = isAuthorized ? await Video.find() : await Video.find();
       if (!videos || videos.length === 0)
         return next(errorHandler(401, "Failed to fetch the data"));
 

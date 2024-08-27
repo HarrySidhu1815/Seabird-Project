@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,10 +9,10 @@ export default function Footer() {
         <div className={classes['outer-div']}>
           <h2>Links</h2>
           <ul>
-            <li>Elder Interviews</li>
-            <li>Curriculum Materials</li>
-            <li>Other Resources</li>
-            <li>Log In</li>
+            <li><Link to='/interviews'>Elder Interviews</Link></li>
+            <li><Link to='/curriculum'>Curriculum Materials</Link></li>
+            <li><Link to='/resources'>Other Resources</Link></li>
+            <li><Link to='/login'>Log In</Link></li>
           </ul>
         </div>
         <div className={classes['outer-div']}>

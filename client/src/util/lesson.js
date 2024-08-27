@@ -65,12 +65,12 @@ export const DUMMY_LESSONS = [
     },
 ]
 
-export const getAllSubjects = () => {
-    const sujects = DUMMY_LESSONS.map(lesson => lesson.subject)
+export const getAllSubjects = (data) => {
+    const sujects = data.map(lesson => lesson.subject)
     return [...new Set(sujects)]
 }
 
-export const getAllLessonBySubject = (subject) => {
-    const lessons = DUMMY_LESSONS.filter(lesson => lesson.subject === subject)
+export const getAllLessonBySubject = (data, subject) => {
+    const lessons = data.filter(lesson => lesson.subject === subject)
     return lessons
 }

@@ -5,7 +5,7 @@
         "topic": "Sxwoxwiyam",
         "speakers": ["Sonny McHalsie", "Keith Carlson"],
         "videoUrl": "https:test1.com",
-        "private": true
+        "private": false
     },
     {
         "id": 102,
@@ -13,7 +13,7 @@
         "topic": "Sxwoxwiyam",
         "speakers": ["Clem Seymour"],
         "videoUrl": "https:test2.com",
-        "private": true
+        "private": false
     },
     {
         "id": 103,
@@ -21,7 +21,7 @@
         "topic": "Sxwoxwiyam",
         "speakers": ["Keith Carlson", "June Harris"],
         "videoUrl": "https:test3.com",
-        "private": true
+        "private": false
     },
     {
         "id": 104,
@@ -85,7 +85,7 @@
         "topic": "Biographical Profiles of Seabird Elders from Past and Present",
         "speakers": ["Denise Douglas", "Kelly Douglas"],
         "videoUrl": "https:test11.com",
-        "private": true
+        "private": false
     },
     {
         "id": 112,
@@ -93,7 +93,7 @@
         "topic": "Biographical Profiles of Seabird Elder, Past and Present",
         "speakers": ["Sonny McHalsie", "Clem Seymour", "Family Pettis", "Richard Moses Louie"],
         "videoUrl": "https:test12.com",
-        "private": true
+        "private": false
     },
     {
         "id": 113,

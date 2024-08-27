@@ -4,11 +4,11 @@ import Modal from './Modal'
 
 export default function ErrorBlock({message, handleClose}) {
   return (
-    <Modal className={classes['error-modal']}>
+    <Modal className={classes['error-modal']} onClose={handleClose}>
       <h2>Error</h2>
       <p>{message}</p>
         <div className={classes.controls}>
-          <button Click={handleClose}>Close</button>
+          <button onClick={handleClose}>Close</button>
         </div>
     </Modal>
   )

@@ -1,25 +1,42 @@
 import React from "react";
-import classes from './ClassroomResource.module.css'
+import classes from "./ClassroomResource.module.css";
 import ResouceCard from "./ResouceCard";
-import ElderInterview from '../../assets/elderInterview.png'
-import curriculum from '../../assets/curriculumHeader.png'
+import ElderInterview from "../../assets/elderInterview.png";
+import curriculum from "../../assets/curriculumHeader.png";
 
 export default function ClassroomResource() {
   return (
     <div id={classes.resources}>
       <h1>View Classroom Resources</h1>
       <div className={classes.container}>
-        <ResouceCard title='Elder Interviews' description='Browse 99 video interviews with Seabird Island Elders' image={ElderInterview}/>
-        <ResouceCard title='Curriculum Materials' description='Find full lesson plans and materials ready for classroom use' image={curriculum}/>
-        <ResouceCard title='Other Resources' description='Find additional information about Sto:lo history and traditions.' image={ElderInterview}/>
+        <ResouceCard
+          title="Elder Interviews"
+          description="Browse 99 video interviews with Seabird Island Elders"
+          image={ElderInterview}
+        />
+        <ResouceCard
+          title="Curriculum Materials"
+          description="Find full lesson plans and materials ready for classroom use"
+          image={curriculum}
+        />
+        <ResouceCard
+          title="Other Resources"
+          description="Find additional information about Sto:lo history and traditions."
+          image={ElderInterview}
+        />
       </div>
       <h1>Who can use these educational materials?</h1>
       <p className={classes.paragraph}>
-        Body text body text body text body text body text body text body text
-        body text body text body text body text body text body text body text
-        body text body text body text body text body text body text body text
-        body text body text body text body text body text body text body text
-        body text
+        This website is intended first and foremost for Sq’éwqel / Seabird
+        Island band and community members. It is also designed to assist K-12
+        and college educators who are working with and for the Seabird
+        community. We have made some of the videos and curriculum resources
+        publicly accessible, but to access most of them you will need first to
+        secure permissions. These restrictions are in place because the Elders
+        and other Knowledge Keepers who contributed their time, energy, and
+        knowledge to this project did it with the understanding that they were
+        helping build resources specifically for Seabird members, youth, and
+        educators.
       </p>
     </div>
   );

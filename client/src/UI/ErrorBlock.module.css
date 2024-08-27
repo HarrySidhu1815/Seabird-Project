@@ -3,10 +3,15 @@
     min-width: 20rem;
     top: 10vh;
     margin: auto;
-    height: 10rem;
+    height: auto;
+    max-height: 25vh;
     padding: 2rem;
     background: #ffffff;
 }
+.error-modal h2{
+    margin: 0;
+}
+
 .controls{
     width: 100%;
     display: flex;
@@ -19,6 +24,7 @@
     border-radius: 1.63rem;
     font-weight: bold;
     font-size: 1rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     display: flex;
     justify-content: center;

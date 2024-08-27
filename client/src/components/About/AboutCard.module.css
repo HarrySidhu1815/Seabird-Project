@@ -21,11 +21,13 @@
 .about-intro{
     width: 50%;
     display: flex;
+    justify-content: start;
     flex-direction: column;
 }
 .about-link{
     color: #d10000;
     text-decoration: underline;
+    cursor: pointer;
 }
 @media screen and (max-width: 900px) {
     .about{
