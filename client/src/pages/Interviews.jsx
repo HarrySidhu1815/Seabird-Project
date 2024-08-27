@@ -107,7 +107,6 @@ export default function Interviews() {
           </div>
         )}
         <div className={classes.deskFilters}>
-          (
             <VideoNav
               selectedTopics={selectedTopics}
               videos={videos}
@@ -116,7 +115,6 @@ export default function Interviews() {
               onSpeakerChange={handleFilterSpeakerChange}
               mobile={false}
             />
-          )
         </div>
         
         <BrowseVideo videos={selectedVideos} />
