@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "./VideoNav.module.css";
 import { getAllSpeakers, getAllTopics } from "../../util/video";
+import DropDownButton from "../Icons/dropArrow";
 
 export default function VideoNav({
   selectedTopics,
@@ -19,16 +20,16 @@ export default function VideoNav({
   return (
     <div className={classes.sideFilter}>
       <div className={classes["topic-filter"]}>
-      {mobile ? (<h3>
-          Sort by Topic{" "}
+      {mobile ? (<div className={classes.sortHeading}>
+          <h3>Sort by Topic{" "}</h3>
           <span
             onClick={() => {
               setShowTopic((prevState) => !prevState);
             }}
           >
-            V
+            <div className={classes.arrow}><DropDownButton /></div>
           </span>
-        </h3>) : (<h3>Sort by Topic</h3>)}
+        </div>) : (<h3>Sort by Topic</h3>)}
         
         {mobile ? showTopic &&
           allTopics.map((topic, index) => (
@@ -54,17 +55,17 @@ export default function VideoNav({
           ))}
       </div>
       <div className={classes["speaker-filter"]}>
-        <h3>
-          Sort by Speaker(s){" "}
+        <div className={classes.sortHeading}>
+          <h3>Sort by Speaker(s){" "}</h3>
           {mobile && (<span
             onClick={() => {
               setShowSpeakers((prevState) => !prevState);
             }}
           >
-            V
+            <div className={classes.arrow}><DropDownButton /></div>
           </span>) }
           
-        </h3>
+        </div>
         {mobile ? showSpeakers &&
           allspeakers.map((speaker, index) => (
             <div key={index}>

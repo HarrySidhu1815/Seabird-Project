@@ -20,6 +20,7 @@ export default function App() {
         <Route path='/resources' element={<OtherResource />} />
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
+        <Route path='*' element={<Home />} />
       </Routes>
       <Footer />
     </BrowserRouter>

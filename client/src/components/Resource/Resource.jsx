@@ -79,9 +79,10 @@ export default function Resource() {
               lessons.map((lesson) => {
                 return (
                   <Lesson
-                    key={lesson.id}
+                    key={lesson.title}
                     title={lesson.title}
                     level={lesson.level}
+                    link={lesson.resource_link}
                   >
                     {lesson.description}
                   </Lesson>

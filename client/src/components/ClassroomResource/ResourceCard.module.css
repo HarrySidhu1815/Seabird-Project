@@ -28,7 +28,9 @@
 .card-desc p{
     font-size: 1.25rem;
 }
-
+.view-btn Link{
+    color: #ffffff;
+}
 .view-btn{
     width: 7.5rem;
     height: 3.75rem;
@@ -38,7 +40,12 @@
     color: #ffffff;
     align-self: center;
     border: none;
+    cursor: pointer;
 }
+.linkStyle{
+    text-align: center;
+}
+
 
 @media screen and (max-width: 900px) {
     .card-desc{

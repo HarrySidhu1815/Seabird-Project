@@ -20,7 +20,7 @@ export default function Home() {
           growing new curriculum platform so check in regularly to see what new
           resources have been added.
         </p>
-        <AccessButton />
+        <AccessButton isHomePage={true}/>
       </div>
       <ClassroomResource />
       <RequestForm />

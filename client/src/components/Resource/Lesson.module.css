@@ -37,8 +37,12 @@
     margin-bottom: 1rem;
 }
 .lesson-description span{
+    align-self: flex-end;
+}
+.lesson-description span a{
     align-self: end;
     color: #d10000;
+    cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
 }

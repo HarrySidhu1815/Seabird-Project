@@ -57,6 +57,20 @@ input[type="checkbox"]:checked::before {
     line-height: 16px;        
 }
 
+.arrow{
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
+    align-self: center;
+    cursor: pointer;
+}
+.sortHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.25rem;
+    background-color: #002473;
+}
 @media screen and (max-width: 900px) {
     .sideFilter{
         width: 100vw;
