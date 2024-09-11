@@ -26,3 +26,12 @@
     height: auto;
     gap: 3rem;
 }
+
+@media screen and (max-width: 900px) {
+    #resources{
+        padding: 0 1rem;
+    }
+    .paragraph{
+        width: 90%;
+    }
+  }

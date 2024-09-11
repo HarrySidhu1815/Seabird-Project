@@ -94,22 +94,6 @@
     border: none;
 }
 
-@media screen and (max-width: 900px) {
-    .mobMenu{
-        display: flex;
-    }
-    .desktopMenu{
-        display: none;
-    }
-    .header{
-        padding: 0 1.25rem;
-    }
-    .logout-modal{
-        height: 60vh;
-        width: 50%;
-    }
-}
-
 .logout-modal{
     max-width: fit-content;
     width: 30%;
@@ -154,4 +138,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .mobMenu{
+        display: flex;
+    }
+    .desktopMenu{
+        display: none;
+    }
+    .header{
+        padding: 0 1.25rem;
+    }
+    .logout-modal{
+        height: 60vh;
+        width: 90%;
+        padding: 1rem 1rem;
+    }
+    .logout-modal h2{
+        margin-top: 0rem;
+        width: 100%;
+    }
 }
