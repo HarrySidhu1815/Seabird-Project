@@ -1,8 +1,9 @@
 import React from "react";
 import classes from "./ClassroomResource.module.css";
 import ResouceCard from "./ResouceCard";
-import ElderInterview from "../../assets/elderInterview.png";
-import curriculum from "../../assets/curriculumHeader.png";
+import ElderInterview from "../../assets/home2.jpg";
+import curriculum from "../../assets/home3.jpg";
+import otherResource from "../../assets/home4.jpg";
 
 export default function ClassroomResource() {
   return (
@@ -24,7 +25,7 @@ export default function ClassroomResource() {
         <ResouceCard
           title="Other Resources"
           description="Find additional information about Sto:lo history and traditions."
-          image={ElderInterview}
+          image={otherResource}
           link='resources'
         />
       </div>

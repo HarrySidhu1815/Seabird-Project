@@ -12,7 +12,6 @@ import { fetchVideos } from "../util/http";
 import Loading from "../UI/Loading";
 
 export default function Interviews() {
-
   const { currentUser } = useSelector((state) => state.user);
   const [selectedTopics, setSelectedTopics] = useState([]);
   const [selectedSpeakers, setSelectedSpeakers] = useState([]);
@@ -29,11 +28,11 @@ export default function Interviews() {
       const response = await fetch("/api/videos", {
         method: "POST",
         body: JSON.stringify({
-          user: currentUser
+          user: currentUser,
         }),
         headers: {
-          'Content-Type': 'application/json'
-        }
+          "Content-Type": "application/json",
+        },
       });
 
       const data = await response.json();
@@ -45,21 +44,21 @@ export default function Interviews() {
       }
 
       setVideos(data.videos);
-      setSelectedVideos(data.videos)
+      setSelectedVideos(data.videos);
       setIsLoading(false);
     }
 
     fetchVideo();
-  }, []);
+  }, [currentUser]);
 
   function handleErrorClose() {
     setError(null);
   }
 
-  let content
+  let content;
 
   if (isLoading) {
-    content = <Loading />
+    content = <Loading />;
   }
 
   if (error) {
@@ -71,55 +70,74 @@ export default function Interviews() {
     );
   }
 
-  if(videos){
+  if (videos) {
     content = (
       <div
         className={`${classes["video-section"]} ${
           !currentUser ? classes["restricted"] : ""
         }`}
       >
-        <div
-          className={classes.mobFilter}
-          onClick={() => setShowFilters((prevState) => !prevState)}
-        >
-          {!showFilters ? (
-            <h3>Sort & Filter</h3>
-          ) : (
-            <div className={classes.openNav}>
-              <div>
-                <CancelButton />
-              </div>
-              <h3>Sort & Filter</h3>
-              <p>Done</p>
+        {currentUser && (
+          <>
+            <div
+              className={classes.mobFilter}
+              onClick={() => setShowFilters((prevState) => !prevState)}
+            >
+              {!showFilters ? (
+                <h3>Sort & Filter</h3>
+              ) : (
+                <div className={classes.openNav}>
+                  <div>
+                    <CancelButton />
+                  </div>
+                  <h3>Sort & Filter</h3>
+                  <p>Done</p>
+                </div>
+              )}
             </div>
-          )}
-        </div>
-        {showFilters && (
-          <div className={classes.mobFilterNav}>
+            {showFilters && (
+              <div className={classes.mobFilterNav}>
+                <VideoNav
+                  selectedTopics={selectedTopics}
+                  videos={videos}
+                  selectedSpeakers={selectedSpeakers}
+                  onTopicChange={handleFilterTopicChange}
+                  onSpeakerChange={handleFilterSpeakerChange}
+                  mobile={true}
+                  handleSearchVideo={handleSearchVideo}
+                />
+              </div>
+            )}
+            <div className={classes.deskFilters}>
               <VideoNav
                 selectedTopics={selectedTopics}
                 videos={videos}
                 selectedSpeakers={selectedSpeakers}
                 onTopicChange={handleFilterTopicChange}
                 onSpeakerChange={handleFilterSpeakerChange}
-                mobile={true}
+                mobile={false}
+                handleSearchVideo={handleSearchVideo}
               />
-          </div>
+            </div>
+          </>
         )}
-        <div className={classes.deskFilters}>
-            <VideoNav
-              selectedTopics={selectedTopics}
-              videos={videos}
-              selectedSpeakers={selectedSpeakers}
-              onTopicChange={handleFilterTopicChange}
-              onSpeakerChange={handleFilterSpeakerChange}
-              mobile={false}
-            />
-        </div>
-        
+
         <BrowseVideo videos={selectedVideos} />
       </div>
-    )
+    );
+  }
+
+  function handleSearchVideo(input){
+
+    if(input.trim() === ''){
+      setSelectedVideos(videos)
+    }
+
+    const searchQuery = input.trim().toLowerCase()
+
+    const filteredVideos = videos.filter(video => video.title.toLowerCase().includes(searchQuery))
+
+    setSelectedVideos(filteredVideos)
   }
 
   function handleFilterTopicChange(topic) {
@@ -149,7 +167,6 @@ export default function Interviews() {
     setSelectedVideos(filteredVideos);
   }
 
-
   return (
     <div>
       <div className={classes.interview}>
@@ -159,15 +176,20 @@ export default function Interviews() {
           of the Covid pandemic. They were conducted as part of a series of
           interconnected research projects that Prof. Keith Carlson was invited
           to undertake into the history and culture of the Seabird Island
-          community.<br/><br/> The Knowledge Keepers who shared their stories with Prof.
+          community.
+          <br />
+          <br /> The Knowledge Keepers who shared their stories with Prof.
           Carlson requested that the interviews be made available to Seabird
-          youth and educators.<br/><br/> Dr. Alessandro Tarsia stitched together the 99
-          mini documentary films and organized them around different themes.
-          People can search the videos either by topic or by the names of the
-          Elders and Knowledge Keepers who appear in the videos.<br/><br/> UFV BMO
-          Collaboratorium students built curriculum resources, including
-          teacher’s guides and lesson plans, that connect directly to the
-          Elders’ voices in the videos.
+          youth and educators.
+          <br />
+          <br /> Dr. Alessandro Tarsia stitched together the 99 mini documentary
+          films and organized them around different themes. People can search
+          the videos either by topic or by the names of the Elders and Knowledge
+          Keepers who appear in the videos.
+          <br />
+          <br /> UFV BMO Collaboratorium students built curriculum resources,
+          including teacher’s guides and lesson plans, that connect directly to
+          the Elders’ voices in the videos.
         </p>
       </div>
       {content}

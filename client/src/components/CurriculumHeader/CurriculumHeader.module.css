@@ -2,12 +2,15 @@
   max-width: 100vw;
   min-height: 31.25rem;
   height: auto;
-  background-image: url("../../assets/curriculum.webp");
+  background: linear-gradient(#002473CC, #002473CC),  url("../../assets/curriculum1.jpg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 6.25rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .curriclum h1 {
@@ -21,6 +24,21 @@
   margin: none;
   font-size: 1.25rem;
   width: 50%;
+}
+
+.contributors{
+  min-height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #002473;
+  color: #ffffff;
+  margin: 0;
+}
+
+.contributors p{
+  width: 61%;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {

@@ -46,7 +46,8 @@
 
 .loggedInAccount{
     background-color: #4ecf00;
-    color: #000000
+    color: #000000;
+    font-size: 1rem;
 }
 
 .notLoggedInAccount{
@@ -79,7 +80,7 @@
 }
 .navMenu li{
     list-style-type: none;
-    font-size: 2rem;
+    font-size: 1rem;
     height: 4rem;
     margin: 0;
     background-color: white;
@@ -110,29 +111,47 @@
 }
 
 .logout-modal{
+    max-width: fit-content;
     width: 30%;
-    min-width: 20rem;
+    padding: 1rem 7rem;
     top: 10vh;
     margin: auto;
-    height: 10rem;
-    padding: 2rem;
+    max-height: fit-content;
     background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.logout-modal h2{
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 4rem;
+}
+
+.logout-modal p{
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
 .controls{
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .controls button{
-    width: 7.56rem;
-    height: 2.69rem;
+    padding: 1rem 2rem;
     border-radius: 1.63rem;
+    border: 0.1rem  solid #4ecf00;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
 }

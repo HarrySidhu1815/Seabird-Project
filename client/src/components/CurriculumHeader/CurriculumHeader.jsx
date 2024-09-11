@@ -3,6 +3,7 @@ import classes from "./CurriculumHeader.module.css";
 
 export default function CurriculumHeader() {
   return (
+    <>
     <div className={classes.curriclum}>
       <h1>Curriculum Materials</h1>
       <p>
@@ -18,13 +19,20 @@ export default function CurriculumHeader() {
         resources that are available here. <br />
         <br />
         More resources will continue to be added as they are developed.
-        <br />
+        {/* <br />
         <br />
         The UFV Collaboratorium students who contributed to the curriculum
         resources showcased here include Tara-Lynn Kozma-Perrin, Alexis Klassen,
         Noa Brooks, Alex de Boer, Bethany Zimmerman, Chloe Belanger, Aliyah
-        Friesen, Zachary Mattie, Gurpreet Kaur Saini
+        Friesen, Zachary Mattie, Gurpreet Kaur Saini */}
       </p>
     </div>
+    <div className={classes.contributors}>
+      <p>The UFV Collaboratorium students who contributed to the curriculum
+        resources showcased here include Tara-Lynn Kozma-Perrin, Alexis Klassen,
+        Noa Brooks, Alex de Boer, Bethany Zimmerman, Chloe Belanger, Aliyah
+        Friesen, Zachary Mattie, Gurpreet Kaur Saini</p>
+    </div>
+    </>
   );
 }

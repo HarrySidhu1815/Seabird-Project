@@ -19,10 +19,11 @@
 }
 
 .header p{
-    width: 70%;
+    width: 100%;
     margin: auto;
     font-size: 1.25rem;
     height: auto;
+    text-align: left;
 }
 .request-form{
     width: 70%;

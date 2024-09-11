@@ -38,10 +38,11 @@ export default function Header() {
     <header className={classes.header}>
       {showModal && (
         <Modal className={classes['logout-modal']}>
-        <h2>Are you really want to logout?</h2>
+        <h2>Are you sure you want to log out?</h2>
+        <p>You will have to log in again to have full access to all the materials on this website.</p>
         <div className={classes.controls}>
-          <button onClick={handleCancel}>Cancel</button>
-          <button className={`${classes['login-btn']} ${classes['loggedInAccount']}`} onClick={handleLogout}>Logout</button>
+          <button className={`${classes['loggedInAccount']}`} onClick={handleLogout}>Logout</button>
+          <button onClick={handleCancel}>Stay Logged In</button>
         </div>
       </Modal>)}
       <div className={classes.logo}><Link to='/'>Seabird Curriculum Resources</Link></div>

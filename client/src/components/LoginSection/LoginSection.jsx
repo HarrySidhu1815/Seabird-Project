@@ -3,7 +3,7 @@ import classes from "./LoginSection.module.css";
 import Input from "../../UI/Input";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import button from '../../assets/submit.png'
+import button from '../../assets/LogInButton.svg'
 import {
   logInFailure,
   logInStart,

@@ -5,12 +5,17 @@ import classes from "./Resource.module.css";
 import { getAllLessonBySubject, getAllSubjects } from "../../util/lesson";
 import ErrorBlock from "../../UI/ErrorBlock";
 import Loading from "../../UI/Loading";
+import { useSelector } from "react-redux";
 
 export default function Resource() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState();
-  const [expandedSubjects, setExpandedSubjects] = useState({});
+  const [expandedSubjects, setExpandedSubjects] = useState({
+    'Sample': true
+  });
+
+  const {currentUser} = useSelector((state) => state.user)
 
   useEffect(() => {
     async function fetchResources() {
@@ -57,6 +62,42 @@ export default function Resource() {
   }
 
   const subjects = getAllSubjects(data);
+
+  if(!currentUser){
+      const lessons = getAllLessonBySubject(data, 'English');
+      const isExpanded = expandedSubjects['Sample'];
+
+      return (
+        <div className={classes.resource}>
+          <div>
+          <div className={classes["lesson-header"]}>
+            <h1>Sample Material</h1>
+            <button onClick={() => handleExpandClick('Sample')}>
+              <img
+                className={isExpanded ? classes.close : classes.open}
+                src={arrow}
+                alt="arrow"
+              />
+            </button>
+          </div>
+          {isExpanded &&
+            lessons.map((lesson) => {
+              return (
+                <Lesson
+                  key={lesson.title}
+                  title={lesson.title}
+                  level={lesson.level}
+                  link={lesson.resource_link}
+                >
+                  {lesson.description}
+                </Lesson>
+              );
+            })}
+        </div>
+        </div>
+      );
+  }
+
   return (
     <div className={classes.resource}>
       {subjects.map((subject) => {

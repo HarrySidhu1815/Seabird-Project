@@ -1,23 +1,26 @@
-.login{
-    max-width: 100vw;
-    height: 18.75rem;
-    background-image: url('../../assets/login.webp');
-    background-size: cover;
-    padding: 6.25rem;
-    display: flex;
-    align-items: center;
+.login {
+  max-width: 100vw;
+  height: 18.75rem;
+  background: linear-gradient(#002473cc, #002473cc),
+    url("../../assets/login1.jpg");
+  background-size: cover;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  padding: 6.25rem;
+  display: flex;
+  align-items: center;
 }
 
-.login h1{
-    font-size: 6rem;
-    color: #ffffff;
+.login h1 {
+  font-size: 6rem;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 900px) {
-    .login{
-        padding: 2rem;
-    }
-    .login h1{
-        font-size: 3rem;
-    }
+  .login {
+    padding: 2rem;
+  }
+  .login h1 {
+    font-size: 3rem;
+  }
 }

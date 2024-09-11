@@ -1,12 +1,15 @@
 import React from "react";
 import AboutCard from "./AboutCard";
 import classes from "./About.module.css";
+import bmoCollaboratorium from '../../assets/home5.jpg';
+import seaBird from '../../assets/home6.jpg';
 
 export default function About() {
   return (
     <div id={classes["about-section"]}>
       <AboutCard
-        title="About the BMO Collaboratorium"
+        imageSrc={bmoCollaboratorium}
+        title="About the UFVs' BMO Collaboratorium"
         link="https://www.ufv.ca/peace-and-reconciliation/collaboratorium/ "
         websiteTitle="BMO Collaboratorium Website"
       >
@@ -18,8 +21,9 @@ export default function About() {
         you can get involved with the UFV BMO Colaboratorium, please go to
       </AboutCard>
       <AboutCard
+        imageSrc={seaBird}
         title="Working with Seabird Island"
-        a="https://www.bmo.com/main/personal/credit-cards/bmo-ascend-world-elite-mastercard/"
+        link="https://www.seabirdschool.ca/"
         websiteTitle="Seabird Island Band Official Website"
       >
         The Sq’éwqel community (also know as Seabird Island Band) is a member of
