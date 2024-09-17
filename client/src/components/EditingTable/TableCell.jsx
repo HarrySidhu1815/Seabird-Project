@@ -11,7 +11,7 @@ export default function TableCell({ record, heading, isInterview, onSave }) {
     const [error, setError] = useState(false);
     const [isLoading, setIsLoading] = useState(false);
     const [success, setSuccess] = useState(false);
-  
+
     useEffect(() => {
       setCurrentValue(Array.isArray(record[heading]) ? record[heading].join(', ') : record[heading]);
       setHasChanged(false);
@@ -23,18 +23,13 @@ export default function TableCell({ record, heading, isInterview, onSave }) {
     }
   
     function handleSelectChange(e) {
-      setCurrentValue(prevStat => prevStat = e.target.value);
-      setHasChanged(prevStat => prevStat = e.target.value !== record[heading]);
-  
-      console.log(currentValue)
-  
-      console.log(hasChanged)
-  
-      if(hasChanged){
-          handleSave()
+        const newValue = e.target.value;
+        setCurrentValue(newValue);
+        
+        const changed = newValue !== record[heading];
+        setHasChanged(changed);
       }
       
-    }
   
     async function handleSaveChanges(updatedInput, id) {
       if (!hasChanged) {
@@ -122,6 +117,7 @@ export default function TableCell({ record, heading, isInterview, onSave }) {
         <div className={classes.cell}>
           {content}
           { heading === 'visibility' ? (
+            <>
               <select
                 className={classes.input}
                 value={currentValue}
@@ -131,6 +127,15 @@ export default function TableCell({ record, heading, isInterview, onSave }) {
                 <option value="Members Only">Members Only</option>
                 <option value="Hidden">Hidden</option>
               </select>
+              {hasChanged && 
+                 <button
+                 onClick={handleSave}
+               >
+                 Save
+               </button>
+              }
+             
+            </>
             ) : isEditing ? (
             <>
               {

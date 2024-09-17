@@ -43,6 +43,15 @@
 .upload-form input, select, textarea{
     padding: 0.5rem 1rem;
     margin-bottom: 1rem;
+    border: 1px solid #000000;
+    -webkit-appearance: none; 
+    -moz-appearance: none;  
+    appearance: none; 
+    border-radius: 0;
+}
+
+.upload-form select{
+    cursor: pointer;
 }
 
 .upload-form p{

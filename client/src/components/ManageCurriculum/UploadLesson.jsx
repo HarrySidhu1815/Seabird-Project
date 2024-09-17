@@ -102,7 +102,7 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
     const result = await response.json();
     if (response.ok) {
       alert('Video metadata saved successfully');
-      
+
       refreshCurriculum();
       handleCloseModal();
     } else {
@@ -182,7 +182,7 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
             required
             id="grade"
           />
-          <label htmlFor="decription">Grade Level*</label>
+          <label htmlFor="decription">Decription*</label>
           <textarea
             value={formData.decription}
             onChange={handleInputChange}

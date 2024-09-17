@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target:  'https://seabird-project.onrender.com',//'https://seabird-project.onrender.com',
+        target:  'http://localhost:3000',//'https://seabird-project.onrender.com',
         secure: true
       }
     }
