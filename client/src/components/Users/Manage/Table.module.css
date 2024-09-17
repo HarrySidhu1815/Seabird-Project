@@ -1,0 +1,56 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table th, td {
+    border: 1px solid #000000;
+    padding: 0.5rem 1rem;
+}
+
+.remove{
+    border: none;
+    color: #d10000;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.remove-modal{
+    padding: 3rem 5rem;
+    min-width: 34rem;
+    width: 40%;
+}
+
+.remove-modal h2{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.remove-modal p{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5rem;
+}
+.action-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.goback-btn{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.remove-btn{
+    background-color: #d10000;
+    color: #ffffff;
+}
+
+.action-buttons button{
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2.70rem;
+    border: 0.2rem solid #d10000;
+}

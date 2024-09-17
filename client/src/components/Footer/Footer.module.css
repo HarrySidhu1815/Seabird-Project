@@ -29,15 +29,33 @@
     display: flex;
     justify-content: center;
     background-color: #e5f7ff;
+    align-items: stretch;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+.logos{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    justify-content: space-evenly;
     align-items: center;
+    height: 15rem;
+    margin-right: 5rem;
+}
+.logos img{
+    height: 6rem;
 }
 
 .outer-div{
-    width: 28%;
-    min-height: 12.88rem;
-    height: auto;
+    min-width: 28%;
+    min-height: 15rem;
+    height: 100%;
     border-left: 0.06rem solid #00B2ff;
     padding-left: 2rem;
+    box-sizing: border-box;
 }
 .outer-div h2{
     font-size: 1.5rem;
@@ -56,15 +74,33 @@
     text-decoration: underline;
 }
 
-@media screen and (max-width: 700px) {
+.bmo, .seabird{
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.seabird{
+    margin-top: 1rem;
+    width: 10rem;
+}
+
+
+@media screen and (max-width: 950px) {
     .links{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0
     }
     .outer-div{
         border-bottom: 0.06rem solid #00B2ff;
         border-left: none;
         width: 18.5rem;
+    }
+    .contact{
+        flex-direction: column;
+        gap: 2rem;
     }
 }

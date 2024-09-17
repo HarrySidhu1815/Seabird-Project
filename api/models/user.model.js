@@ -1,11 +1,6 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-    username: {
-        type: String,
-        required: true,
-        unique: true
-    },
     email: {
         type: String,
         required: true,
@@ -18,7 +13,11 @@ const userSchema = new mongoose.Schema({
     admin: {
         type: Boolean,
         required: true
-    }
+    },
+    lastActivity: {
+        type: Date,
+        default: Date.now,
+      }
 }, {timestamps: true})
 
 const User = mongoose.model('User', userSchema)

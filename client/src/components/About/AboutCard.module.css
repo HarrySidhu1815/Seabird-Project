@@ -8,6 +8,7 @@
 .about h1 {
     font-size: 3rem;
     text-align: center;
+    font-family: 'Zilla Slab', sans-serif;
 }
 .about-card{
     display: flex;
@@ -15,7 +16,8 @@
 }
 .about-image{
     width: 50%;
-    height: 22rem;
+    height: auto;
+    min-height: 22rem;
     object-fit: cover;
 }
 .about-intro{

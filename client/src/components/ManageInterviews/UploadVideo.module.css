@@ -1,0 +1,62 @@
+.modal-content{
+    padding: 3.5rem 5rem;
+    width: 33rem;
+    padding-top: 1rem;
+}
+.modal-content h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.cancel-video{
+    height: 2rem;
+    width: 2rem;
+    align-self: flex-end;
+}
+.file-input{
+    display: none;
+}
+.upload-image{
+    cursor: pointer;
+}
+.upload-file{
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+.choose-file{
+    margin-bottom: 2rem;
+}
+
+.choose-file h3{
+    margin: 0;
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.upload-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-form input, select{
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.upload-form p{
+    margin: 0;
+}
+
+.upload-form button{
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    max-width: 10rem;
+    border-radius: 2.7rem;
+    margin-top: 2rem;
+    align-self: flex-end;
+    background-color: #ffffff;
+    border: 0.2rem solid #d10000;
+    cursor: pointer;
+}

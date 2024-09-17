@@ -5,18 +5,26 @@ const resourceSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    subkect: {
+    subject: {
         type: String,
         required: true
     },
     level: {
-        type: Array,
-        required: true
-    },
-    resource: {
         type: String,
         required: true
     },
+    description: {
+        type: String,
+        required: true
+    },
+    resource_link: {
+        type: String,
+        required: true
+    },
+    visibility: {
+        type: String,
+        required: true
+    }
 }, {timestamps: true})
 
 const Resource = mongoose.model('resource', resourceSchema)

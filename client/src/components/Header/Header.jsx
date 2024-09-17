@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { signout } from '../../redux/user/userSlice'
 import menu from '../../assets/burgerMenu.png'
 import Modal from '../../UI/Modal'
+import CancelButton from '../Icons/cancel'
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false)
@@ -42,10 +43,10 @@ export default function Header() {
         <p>You will have to log in again to have full access to all the materials on this website.</p>
         <div className={classes.controls}>
           <button className={`${classes['loggedInAccount']}`} onClick={handleLogout}>Logout</button>
-          <button onClick={handleCancel}>Stay Logged In</button>
+          <button className={classes.stayLoggedIn} onClick={handleCancel}>Stay Logged In</button>
         </div>
       </Modal>)}
-      <div className={classes.logo}><Link to='/'>Seabird Curriculum Resources</Link></div>
+      <div className={classes.logo}><Link to='/'>Learning with Seabird</Link></div>
       <nav className={classes.nav}>
         <ul className={classes.desktopMenu}>
             <Link to='/interviews'><li>Elder Interviews</li></Link>
@@ -55,10 +56,12 @@ export default function Header() {
         </ul>
         <img className={classes.mobMenu} src={menu} alt='Menu' onClick={()=>setShowMenu(!showMenu)}/>
         <div className={classes.navMenu} style={{'display': showMenu ? 'flex' : 'none'}}>
+            <div onClick={()=>setShowMenu(false)} className={classes['cancel-btn']}><CancelButton /></div>
+            <Link to='/' onClick={()=>setShowMenu(false)}><li >Home</li></Link>
             <Link to='/interviews' onClick={()=>setShowMenu(false)}><li >Elder Interviews</li></Link>
             <Link to='/curriculum' onClick={()=>setShowMenu(false)}><li>Curriculum Materials</li></Link>
             <Link to='/resources' onClick={()=>setShowMenu(false)}><li>Other Resources</li></Link>
-            <button className={`${bgColor}`} onClick={handleButtonClick}>{currentUser ? 'Log Out' : 'Log In'}</button>
+            <button className={`${classes['login-btn-mobile']} ${bgColor}`} onClick={handleButtonClick}>{currentUser ? 'Log Out' : 'Log In'}</button>
         </div>
       </nav>
     </header>

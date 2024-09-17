@@ -10,6 +10,7 @@
     text-align: center;
     font-size: 3rem;
     margin-bottom: 0;
+    font-family: 'Zilla Slab', sans-serif;
 }
 .paragraph{
     display: flex;

@@ -9,11 +9,13 @@
   padding: 6.25rem;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .login h1 {
   font-size: 6rem;
   color: #ffffff;
+  font-family: 'Zilla Slab', sans-serif;
 }
 
 @media screen and (max-width: 900px) {

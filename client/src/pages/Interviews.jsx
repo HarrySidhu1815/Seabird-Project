@@ -8,8 +8,8 @@ import { useSelector } from "react-redux";
 import AccessButton from "../UI/AccessButton";
 import CancelButton from "../components/Icons/cancel";
 import ErrorBlock from "../UI/ErrorBlock";
-import { fetchVideos } from "../util/http";
 import Loading from "../UI/Loading";
+import AdminBar from "../UI/AdminBar";
 
 export default function Interviews() {
   const { currentUser } = useSelector((state) => state.user);
@@ -170,6 +170,7 @@ export default function Interviews() {
   return (
     <div>
       <div className={classes.interview}>
+      {currentUser?.admin && <AdminBar />}
         <h1>Elder Interviews</h1>
         <p>
           The 99 videos that appear here were recorded during the later stages

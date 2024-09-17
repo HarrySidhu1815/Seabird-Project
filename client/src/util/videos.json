@@ -1,802 +1,702 @@
 [
     {
-        "id": 101,
         "title": "1.1 - Naxaxalhts’i (Sonny McHalsie) Shares Back Teachings That Earlier Elders Taught Him",
         "topic": "Sxwoxwiyam",
         "speakers": ["Sonny McHalsie", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+1.1+-+Naxaxalhts%E2%80%99i+(Sonny+McHalsie)+Shares+Back+Teachings+That+Earlier+Elders+Taught+Him.+Sxwoxwiyam.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": false
+        "visibility": "Public"
     },
     {
-        "id": 102,
         "title": "1.2 - Siyamia (Late Chief Clem Seymour) Shares What the Elders Have Taught Him",
         "topic": "Sxwoxwiyam",
         "speakers": ["Clem Seymour"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+1.2+-+Siyamia+(Clem+Seymour)+Shares+What+the+Elders+Have+Taught+Him.+Sxwoxwiyam.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7+min.mp4",
-        "private": false
+        "visibility": "Members Only"
     },
     {
-        "id": 103,
         "title": "1.3 - Repatriating Fred Ewen’s 1945 ‘Stó:lō River Story’ to His Descendants",
         "topic": "Sxwoxwiyam",
         "speakers": ["Keith Carlson", "June Harris"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+1.3+-+Repatriating+Fred+Ewen%E2%80%99s+1945+%E2%80%98St%C3%B3l%C5%8D+River+Story%E2%80%99+to+His+Descendants.+Sxwoxwiyam.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": false
+        "visibility": "Public"
     },
     {
-        "id": 104,
         "title": "2.1.1 - Naxaxalhts’i (Sonny McHalsie) Discusses the History of Seabird Island and the Seven Tiyt Communities",
         "topic": "Narratives",
         "speakers": ["Sonny McHalsie", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.1.1+-+Naxaxalhts%E2%80%99i+(Sonny+McHalsie)+Discusses+the+History+of+Seabird+Island+and+the+Seven+Tiyt+Communities.+Sqwelqwel.+Narratives.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+12+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 105,
         "title": "2.1.2 - Naxaxalhts’i (Sonny McHalsie) Shares Seabird Narratives and Describes Tiyt Territory Boundaries",
         "topic": "Narratives",
         "speakers": ["Sonny McHalsie", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.1.2+-+Naxaxalhts%E2%80%99i+(Sonny+McHalsie)+Shares+Seabird+Narratives+and+Describes+Tiyt+Territory+Boundaries.+Sqwelqwel.+Narratives.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 106,
         "title": "2.1.3 - Denise and Kelly Douglas Share Their Family’s Understanding of Seabird’s Relationship to the Pilalt",
         "topic": "Narratives",
         "speakers": ["Denise Douglas", "Kelly Douglas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.1.3+-+Denise+and+Kelly+Douglas+Share+Their+Family%E2%80%99s+Understanding+of+Seabird%E2%80%99s+Relationship+to+the+Pilalt.+Sqwelqwel.+Narratives.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 107,
         "title": "2.1.4 - Late Chief Clem Seymour, ‘Looking for the Path of the Ancestors’",
         "topic": "Narratives",
         "speakers": ["Clem Seymour"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.1.4+-+Clem+Seymour%2C+%E2%80%98Looking+for+the+Path+of+the+Ancestors.%E2%80%99+Sqwelqwel.+Narratives.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 108,
         "title": "2.2.1 - The Bobb Family",
         "topic": "Biographical Profiles of Seabird Elders from Past and Present",
         "speakers": ["Wayne Bob", "Scotty McNeil", "Star Pettis", "Kasey Chapman", "Jim Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.2.1+-+The+Bobb+Family.+Sqwelqwel.+Biographical+Profiles+of+Seabird+Elders+from+Past+and+Present.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+11+min.mp4",
-        "private": true
+        "visibility": "Public"
     },
     {
-        "id": 109,
         "title": "2.2.2 - Jim Pettis",
         "topic": "Biographical Profiles of Seabird Elders from Past and Present",
         "speakers": ["Jim Pettis", "Kasey Chapman", "Star Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.2.2+-+Jim+Pettis.+Sqwelqwel.+Biographical+Profiles+of+Seabird+Elders+from+Past+and+Present.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 110,
         "title": "2.2.3 - Fred Ewen",
         "topic": "Biographical Profiles of Seabird Elders from Past and Present",
         "speakers": ["Gord Peters", "KeiSerena Peters", "Reid Peters", "Wayne Bob", "Carol-Ann Nickel"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.2.3+-+Fred+Ewen.+Sqwelqwel.+Biographical+Profiles+of+Seabird+Elders+from+Past+and+Present.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 111,
         "title": "2.2.4 - The Charles Family",
         "topic": "Biographical Profiles of Seabird Elders from Past and Present",
         "speakers": ["Denise Douglas", "Kelly Douglas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.2.4+-+The+Charles+Family.+Sqwelqwel.+Biographical+Profiles+of+Seabird+Elders+from+Past+and+Present.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+12+min.mp4",
-        "private": false
+        "visibility": "Members Only"
     },
     {
-        "id": 112,
         "title": "2.2.5 - Historical Family Album",
         "topic": "Biographical Profiles of Seabird Elders from Past and Present",
         "speakers": ["Sonny McHalsie", "Clem Seymour", "Family Pettis", "Richard Moses Louie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.2.5+-+Historical+Family+Album.+Sqwelqwel.+Biographical+Profiles+of+Seabird+Elder%2C+Past+and+Present.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": false
+        "visibility": "Members Only"
     },
     {
-        "id": 113,
         "title": "2.3.1.1 - Johnny Bobb's Dairy Farm",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Wayne Bob"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.1.1+-+Johnny+Bobb's+Dairy+Farm.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Farming.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Public"
     },
     {
-        "id": 114,
         "title": "2.3.1.2 - Family and Commercial Farming",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Wayne Bob", "Richard Moses Louie", "Mike Joe", "Reid Peters", "Clem Seymour", "Jim Pettis", "Star Pettis", "Kasey Chapman", "Kelly Douglas", "Denise Douglas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.1.2+-+Family+and+Commercial+Farming.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Farming.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 115,
         "title": "2.3.1.3 - Gardening and Farming",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Sue Harris", "Donna Andrew", "Jim Harris", "Lyle Brent Bobb"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.1.3+-+Gardening+and+Farming.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Farming.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 116,
         "title": "2.3.1.4 – Indigenous Homestead",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Lyle Brent Bobb", "Chuck McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.1.4+-+Indigenous+Homestead.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Farming.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Public"
     },
     {
-        "id": 117,
         "title": "2.3.1.5 – Farming and Preserving",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Chuck McNeil", "Lyle Brent Bobb", "Gail Froese"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.1.5+-+Farming+and+Preserving.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Farming.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 118,
         "title": "2.3.1.6 - Farming an Indigenous Future",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Chuck McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.1.6+-+Farming+an+Indigenous+Future.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Farming.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 119,
         "title": "2.3.1.7 - Farming on the Land of the Ancestors",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Chuck McNeil", "Dwayne McNeil", "Stacy McNeil", "Jack McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.1.7+-+Farming+On+the+Land+of+the+Ancestors.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Farming.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+5+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 120,
         "title": "2.3.2.1 - Fishing and Teachings",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Clem Seymour", "Louie Andrew"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.1+-+Fishing+and+Teachings.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 121,
         "title": "2.3.2.2 - Fishing and Traditions",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Denise Douglas", "Kelly Douglas", "Reid Peters", "Louie Andrew", "Family Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.2+-+Fishing+and+Traditions.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Fishing.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 122,
         "title": "2.3.2.3 - Fishing and Drying",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Chuck McNeil", "Reid Peters", "Estvan Thomas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.3+-+Fishing+and+Drying.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Fishing.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 123,
         "title": "2.3.2.4 - Fishing and Resilience",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Garry Peters", "Jim Harris", "Sue Harris"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.4+-+Fishing+and+Resilience.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Fishing.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 124,
         "title": "2.3.2.5 - Fishing and Giving",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Jim Harris", "Sue Harris", "Jim Pettis", "Star Pettis", "Kasey Chapman"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.5+-+Fishing+and+Giving.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Fishing.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 125,
         "title": "2.3.2.6 - Fishing and Responsibilities",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Wilfred Charlie", "Jim Harris", "Sue Harris", "Chuck McNeil", "Ronald Archie Joe", "Keith Carlson", "Wilfred Charlie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.6+-+Fishing+and+Responsibilities.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Fishing.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 126,
         "title": "2.3.2.7 - Archie Joe’s Fishing Remembrances",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Ronald Archie Joe", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.7+-+Ronald+Archie+Joe's+Fishing+Remembrances.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Fishing.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+11+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 127,
         "title": "2.3.2.8 - Fishing and Resurgence",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.2.8+-+Fishing+And+Resurgence.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Fishing.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 128,
         "title": "2.3.3.1 - Gathering Resources",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Louie Andrew", "Margarett DeGroot", "Kelly Douglas", "Denise Douglas", "Davon McNeil", "Scotty McNeil", "Clem Seymour", "Mike Joe"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.3.1+-+Gathering+Resources.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Gathering.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 129,
         "title": "2.3.3.2 - Gathering and Protocols",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Stephanie Thomas", "Jim Harris", "Sue Harris", "Livian John", "Fred Thomas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.3.2+-+Gathering+and+Protocols.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Gathering.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 130,
         "title": "2.3.3.3 - Gathering Up To That Hill",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Jim Harris", "Sue Harris", "Wilfred Charlie", "Donna Andrew"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.3.3+-+Gathering+Up+To+that+Hill.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Gathering.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+4+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 131,
         "title": "2.3.4.1 - Hunting On the Path of the Ancestors",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Reid Peters", "Louie Andrew", "Sonny McHalsie", "Clem Seymour"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.4.1+-+Hunting+On+the+Path+of+the+Ancestors.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Hunting.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 132,
         "title": "2.3.4.2 - Hunting Histories",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Chuck McNeil", "Estvan Thomas", "Davon McNeil", "Scotty McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.4.2+-+Hunting+Histories.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Hunting.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 133,
         "title": "2.3.4.3 - Hunting and Thanking",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Donna Andrew", "Jim Pettis", "Star Pettis", "Kasey Chapman", "Garry Peters"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.4.3+-+Hunting+and+Thanking.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Hunting.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 134,
         "title": "2.3.4.4 - Hunting and Providing for the Family",
         "topic": "Family Histories of Living On, and Off Of, the Land",
         "speakers": ["Scotty McNeil", "Davon McNeil", "Mike Joe", "Chuck McNeil", "Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.3.4.4+-+Hunting+and+Providing+for+the+Family.+Sqwelqwel.+Family+Histories+of+Living+On%2C+and+Off+Of%2C+the+Land.+Hunting.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+8+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 135,
         "title": "2.4.1.1 - Logging the Mighty Trees",
         "topic": "Wage Labour",
         "speakers": ["Jim Pettis", "Star Pettis", "Kasey Chapman", "Reid Peters", "Gord Peters", "Andrew Louie", "Reid Peters"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.4.1.1+-+Logging+the+Mighty+Trees.+Sqwelqwel.+Wage+Labour.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 136,
         "title": "2.4.1.2 - Logging and Succeeding",
         "topic": "Wage Labour",
         "speakers": ["Family Pettis", "Mike Joe", "Fred Price", "Lyle Brent Bobb", "Wilfred Charlie", "Alfred Anthony Peters", "Gail Starr", "Chuck McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.4.1.2+-+Logging+and+Succeeding.+Sqwelqwel.+Wage+Labour.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+8+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 137,
         "title": "2.4.1.3 - Logging on Reserve",
         "topic": "Wage Labour",
         "speakers": ["Chuck McNeil", "Stacy McNeil", "Dwayne McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.4.1.3+-+Logging+On+Reserve.+Sqwelqwel.+Wage+Labour.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 138,
         "title": "2.4.2.1 - Providing for the Family",
         "topic": "Wage Labour",
         "speakers": ["Family Pettis", "Mike Joe", "Fred Price", "Lyle Brent Bobb", "Wilfred Charlie", "Alfred Anthony Peters", "Gail Froese", "Chuck McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.4.2.1+-+Providing+for+the+Family.+Sqwelqwel.+Wage+Labour.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 139,
         "title": "2.4.2.2 - Providing for the Family",
         "topic": "Wage Labour",
         "speakers": ["Mike Joe"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.4.2.2+-+Providing+for+the+Family.+Sqwelqwel.+Wage+Labour.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 140,
         "title": "2.5.1 - The Paddle Wheeler 'Sea Bird'",
         "topic": "Memorable Events, Occurrences, Happenings, and People",
         "speakers": ["Reid Peters", "Keith Carlson", "Carol-Ann Nickel"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.5.1+-+The+Paddle+Wheeler+%E2%80%9CSea+Bird.%E2%80%9D+Sqwelqwel.+Memorable+Events%2C+Occurrences%2C+Happenings%2C+and+People.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 141,
         "title": "2.5.2 - The Coming of the Railway",
         "topic": "Memorable Events, Occurrences, Happenings, and People",
         "speakers": ["Reid Peters", "Wayne Bob", "Sue Harris", "Fred Thomas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.5.2+-+The+Coming+of+the+Railway.+Sqwelqwel.+Memorable+Events%2C+Occurrences%2C+Happenings%2C+and+People.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 142,
         "title": "2.5.3 - The Construction of Seabird Road",
         "topic": "Memorable Events, Occurrences, Happenings, and People",
         "speakers": ["Reid Peters", "Serena Peters", "Gord Peters", "Family Andrew", "Fred Thomas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.5.3+-+The+Construction+of+Seabird+Road.+Sqwelqwel.+Memorable+Events%2C+Occurrences%2C+Happenings%2C+and+People.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 143,
         "title": "2.5.4 - The 1948 Flood",
         "topic": "Memorable Events, Occurrences, Happenings, and People",
         "speakers": ["Wayne Bob", "Reid Peters", "Andrew Louie", "Carol-Ann Nickel", "Fred Price", "Wilfred Charlie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.5.4+-+The+1948+Flood.+Sqwelqwel.+Memorable+Events%2C+Occurrences%2C+Happenings%2C+and+People.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 144,
         "title": "2.5.5.1 - The Coming of Electricity",
         "topic": "Memorable Events, Occurrences, Happenings, and People",
         "speakers": ["Jim Pettis", "Star Pettis", "Kasey Chapman", "Chuck McNeil", "Lyle Brent Bobb", "Gail Froese"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.5.5.1+-+The+Coming+of+Electricity.+Sqwelqwel.+Memorable+Events%2C+Occurrences%2C+Happenings%2C+and+People.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 145,
         "title": "2.5.5.2 - The Coming of Electricity",
         "topic": "Memorable Events, Occurrences, Happenings, and People",
         "speakers": ["Stacy McNeil", "Dwayne McNeil", "Chuck McNeil", "Andrew Louie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.5.5.2+-+The+Coming+of+Electricity.+Sqwelqwel.+Memorable+Events%2C+Occurrences%2C+Happenings%2C+and+People.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 146,
         "title": "2.5.6 - The Canoe Festival",
         "topic": "Memorable Events, Occurrences, Happenings, and People",
         "speakers": ["Chuck McNeil", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.5.6+-+The+Canoe+Festival.+Sqwelqwel.+Memorable+Events%2C+Occurrences%2C+Happenings%2C+and+People.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 147,
         "title": " 2.6.1.1 - Facing the River",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Reid Peters"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.1.1+-+Facing+the+River.+Sqwelqwel.+The+River+and+the+Island.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+11+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 148,
         "title": "2.6.1.2 - The Swiftly Flowing River",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Andrew Louie", "Sonny McHalsie", "Reid Peters", "Garry Peters", "Lyle Brent Bobb"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.1.2+-+The+Swiftly+Flowing+River.+Sqwelqwel.+The+River+and+the+Island.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+6+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 149,
         "title": "2.6.2 - Maria Slough",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Andrew Louie", "Reid Peters", "Davon McNeil", "Scotty McNeil", "Stephanie Thomas", "Lyle Brent Bobb"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.2+-+Maria+Slough.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+8+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 150,
         "title": "2.6.3 - The Old School",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Reid Peters", "Chuck McNeil", "Clem Seymour", "Kasey Chapman", "Star Pettis", "Jim Pettis", "Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.3+-+The+Old+School.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+11+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 151,
         "title": "2.6.4 - The Modern Day School and High School",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Chuck McNeil", "Reid Peters"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.4.1+-+The+Modern+Day+School+and+High+School.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 152,
         "title": "2.6.4.1 - The Modern Day School and High School",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Kasey Chapman", "Don Froese", "Taylor Froese", "Stephanie Thomas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.4.2+-+The+Modern+Day+School+and+High+School.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 153,
         "title": "2.6.4.2 - The Modern Day School and High School",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Kasey Chapman", "Don Froese", "Taylor Froese", "Stephanie Thomas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.4.2+-+The+Modern+Day+School+and+High+School.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 154,
         "title": "2.6.5 - The Old Hall and Church",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Reid Peters", "Andrew Louie", "Chuck McNeil", "Dwayne McNeil", "Stacy McNeil", "Donna Andrew", "Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.5+-+The+Old+Hall+and+Church.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+11+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 155,
         "title": "2.6.6.1 - The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Mike Joe", "Clem Seymour", "Reid Peters"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.1+-+The+Cemetery.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 156,
         "title": "2.6.6.2 - The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Marlana Peters", "Garry Peters", "Don Froese", "Taylor Froese", "Gail Froese", "Henry Jr Pettis", "Wilfred Charlie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.2+-+The+Cemetery.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 157,
         "title": "2.6.6.3.1 - Henry Pettis Jr. Shares Teachings From The Elders About Cemeteries, Funerals, and Spirituality",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.3.1+-+Henry+Pettis+Jr.+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 158,
         "title": "2.6.6.3.2 - Henry Pettis Jr. Shares Teachings From The Elders About Cemeteries, Funerals, and Spirituality",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.3.2+-+Henry+Pettis+Jr.+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+11+m.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 159,
         "title": "2.6.6.3.3 - Henry Pettis Jr. Shares Teachings From The Elders About Cemeteries, Funerals, and Spirituality",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.3.3+-+Henry+Pettis+Jr.+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 160,
         "title": "2.6.6.4.1 - Art Andrew and Paul Pettis Share Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Art Andrew", "Paul Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.4.1+-+Art+Andrew+and+Paul+Pettis+Share+Teachings+From+The+Elders+About+The+Cemetery.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 161,
         "title": "2.6.6.4.2 - Art Andrew and Paul Pettis Share Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Art Andrew", "Paul Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.4.2+-+Art+Andrew+and+Paul+Pettis+Share+Teachings+From+The+Elders+About+The+Cemetery.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 162,
         "title": "2.6.6.4.3 - Art Andrew and Paul Pettis Share Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Art Andrew", "Paul Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.4.3+-+Art+Andrew+and+Paul+Pettis+Recall+Their+Work+At+the+Cemetery.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 163,
         "title": "2.6.6.4.4 - Art Andrew and Paul Pettis Share Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Art Andrew", "Paul Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.4.4+-+Art+Andrew+and+Paul+Pettis+Recall+Their+Work+At+The+Cemetery.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 164,
         "title": "2.6.6.4.5 - Art Andrew and Paul Pettis Share Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Art Andrew", "Paul Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.4.5+-+Art+Andrew+and+Paul+Pettis+Recall+Their+Work+At+The+Cemetery.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 165,
         "title": "2.6.6.5.1 - Mike Joe Shares Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Mike Joe"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.5.1+-+Mike+Joe+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 166,
         "title": "2.6.6.5.2 - Mike Joe Shares Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Mike Joe"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.5.2+-+Mike+Joe+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 167,
         "title": "2.6.6.5.3 - Mike Joe Shares Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Mike Joe"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.5.3+-+Mike+Joe+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 168,
         "title": "2.6.6.5.4 - Mike Joe Shares Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Mike Joe"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.5.4+-+Mike+Joe+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 169,
         "title": "2.6.6.6.1 - Richard Louie Shares Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Richard Moses Louie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.6.1+-+Richard+Louie+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+m.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 170,
         "title": "2.6.6.6.2 - Richard Louie Shares Teachings From The Elders About The Cemetery",
         "topic": "Memoryscapes and Memory Places",
         "speakers": ["Richard Moses Louie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.6.6.6.2+-+Richard+Louie+Shares+Teachings+From+The+Elders+About+Cemeteries%2C+Funerals%2C+and+Spirituality.+Sqwelqwel.+Memoryscapes+and+Memory+Places.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+11+m.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 171,
         "title": "2.7.1.1 - History",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Clem Seymour", "Richard Moses Louie", "Family Pettis", "Chuck McNeil", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.1.1+-+History.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 172,
         "title": "2.7.1.2 - History",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Family Andrew", "Keith Carlson", "Chuck McNeil", "Dwayne McNeil", "Don Froese", "Gail Froese", "Jim Pettis", "Star Pettis", "Kasey Chapman"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.1.2+-+History.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 173,
         "title": "2.7.2.1 - The Band Office",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Chuck McNeil", "Keith Carlson", "Jim Pettis", "Star Pettis", "Kasey Chapman", "Richard Moses Louie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.2.1+-+The+Band+Office.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 174,
         "title": "2.7.2.2 - The Band Office",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Star Pettis", "Jim Pettis", "Kasey Chapman", "Serena Peters", "Reid Peters", "Chuck McNeil"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.2.2+-+The+Band+Office.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 175,
         "title": "2.7.2.3 - The Band Office",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Richard Moses Louie", "June Harris"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.2.3+-+The+Band+Office.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+8+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 176,
         "title": "2.7.2.4 - The Band Office",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Richard Moses Louie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.2.4+-+The+Band+Office.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+5+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 177,
         "title": "2.7.3.1 - Chieftainship",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Wayne Bob", "Clem Seymour", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.3.1+-+Chieftainship.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 178,
         "title": "2.7.3.2 - Chieftainship",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Chuck McNeil", "Dwayne McNeil", "Stacy McNeil", "Jim Pettis", "Star Pettis", "Kasey Chapman"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.3.2+-+Chieftainship.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 179,
         "title": "2.7.3.3 - Chieftainship",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Clem Seymour", "Jim Pettis", "Star Pettis", "Kasey Chapman", "Wayne Bob", "Reid Peters", "Gord Peters", "Serena Peters"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.3.3+-+Chieftainship.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 180,
         "title": "2.7.3.4 - Chieftainship",
         "topic": "Band History Since Becoming Independent In 1958",
         "speakers": ["Janice Parsey", "Jim Harris", "Sue Harris", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.7.3.4+-+Chieftainship.+Sqwelqwel.+Band+History+Since+Becoming+Independent+In+1958.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 181,
         "title": " 2.8.1 - Traditions from the Land",
         "topic": "Cultural Traditions",
         "speakers": ["Clem Seymour", "Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.1+-+Traditions+from+the+Land.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 182,
         "title": "2.8.2 - Traditions from the Ancestors",
         "topic": "Cultural Traditions",
         "speakers": ["Kelly Douglas", "Denise Douglas", "Clem Seymour", "Keith Carlson", "Sonny McHalsie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.2+-+Traditions+from+the+Ancestors.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 183,
         "title": "2.8.3 - Traditions and Culture",
         "topic": "Cultural Traditions",
         "speakers": ["Gord Peters", "Serena Peters", "Reid Peters", "Mike Joe"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.3+-+Traditions+and+Culture.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 184,
         "title": "2.8.4 - Traditions and Transformations",
         "topic": "Cultural Traditions",
         "speakers": ["Mike Joe", "Sue Harris", "Jim Harris", "Keith Carlson", "Fred Thomas", "Wilfred Charlie", "Fred Price", "Carol-Ann Nickel"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.4+-+Traditions+and+Transformations.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 185,
         "title": "2.8.5 - Traditions and Resilience",
         "topic": "Cultural Traditions",
         "speakers": ["Ilary Andrew", "Donna Andrew", "Don Froese", "Davon McNeil", "Scotty McNeil", "Janice Parsey", "Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.5+-+Traditions+and+Resilience.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+8+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 186,
         "title": "2.8.6.1 - Henry Pettis Jr. Shares Teachings From the Elders About Spirituality and Traditional Ceremonies",
         "topic": "Cultural Traditions",
         "speakers": ["Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.6.1+-+Henry+Pettis+Jr.+Shares+Teachings+From+The+Elders+About+Spirituality+And+Traditional+Ceremonies.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 187,
         "title": "2.8.6.2 - Henry Pettis Jr. Shares Teachings From the Elders About Spirituality and Longhouses",
         "topic": "Cultural Traditions",
         "speakers": ["Henry Jr Pettis"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.6.2+-+Henry+Pettis+Jr.+Shares+Teachings+From+The+Elders+About+Spirituality+And+Longhouses.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+8+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 188,
         "title": "2.8.7 - Richard Louie Shares Teachings from the Elders About Spirituality",
         "topic": "Cultural Traditions",
         "speakers": ["Richard Moses Louie"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+2.8.7+-+Richard+Louie+Shares+Teachings+From+The+Elders+About+Spirituality.+Sqwelqwel.+Cultural+Traditions.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+11+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 189,
         "title": "3.1 - From Seabird Island to Worldwide Universities Scholars who met the Ancestors",
         "topic": "Cultural Traditions",
         "speakers": ["Chuck McNeil", "Kelly Douglas", "Denise Douglas"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.1+-+From+Seabird+Island+To+Worldwide+Universities+Scholars+Who+Met+The+Ancestors.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2022.+7+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 190,
         "title": "3.2 - Professor Keith Carlson Explains the Tremendous Impact of the First Smallpox Epidemic (1782)",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.2+-+Professor+Keith+Carlson+Explains+The+Tremendous+Impact+Of+The+First+Smallpox+Epidemic+(1782).+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 191,
         "title": "3.3 - Professor Keith Carlson Presents the Relevance in the Northwest Pacific Coast of the Pre-Contact Sto:lo Wind-Drying Salmon Fishery",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.3.1+-+Professor+Keith+Carlson+Presents+The+Relevance+In+The+Northwest+Pacific+Coast+Of+The+Pre-Contact+St%C3%B3l%C5%8D+Wind-Drying+Salmon+Fishery.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 192,
         "title": "3.3.2 - Professor Keith Carlson Introduces The Relevance In The Northwest Pacific Coast Of The Pre-Contact Stólō Wind-Drying Salmon Fishery",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.3.2+-+Professor+Keith+Carlson+Introduces+The+Relevance+In+The+Northwest+Pacific+Coast+Of+The+Pre-Contact+St%C3%B3l%C5%8D+Wind-Drying+Salmon+Fishery.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+13+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 193,
         "title": "3.4 - Professor Keith Carlson Illustrates The Settler Colonial Creation Of The Seabird Island Reserve",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.4+-+Professor+Keith+Carlson+Illustrates+The+Settler+Colonial+Creation+Of+The+Seabird+Island+Reserve.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+12+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 194,
         "title": "3.5.1 - Professor Keith Carlson Recounts Sto:lo Stewardship in Laying Off the Seabird Island Reserve (Part 1)",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.5.1+-+Professor+Keith+Carlson+Recounts+St%C3%B3l%C5%8D+Stewardship+In+Laying+Off+The+Seabird+Island+Reserve.+Part+1.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 195,
         "title": "3.5.2 - Professor Keith Carlson Recounts Sto:lo Stewardship in Laying Off the Seabird Island Reserve (Part 2)",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.5.2+-+Professor+Keith+Carlson+Recounts+St%C3%B3l%C5%8D+Stewardship+In+Laying+Off+The+Seabird+Island+Reserve.+Part+2.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+8+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 196,
         "title": "3.6.1 – Professor Keith Carlson Explains the Consequences of Settler Colonial Policies on Stolo Governance (Part 1)",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.6.1+-+Professor+Keith+Carlson+Explains+The+Consequences+Of+Settler+Colonial+Policies+On+St%C3%B3l%C5%8D+Governance+-+Part+1.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+10+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 197,
         "title": "3.6.2 - Professor Keith Carlson Explains the Consequences of Settler Colonial Policies on Stolo Governance (Part 2)",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.6.2+-+Professor+Keith+Carlson+Explains+The+Consequences+Of+Settler+Colonial+Policies+On+St%C3%B3l%C5%8D+Governance+-+Part+2.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+11+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 198,
         "title": "3.7 - Professor Keith Carlson Illustrates the Differences Between Sqwelqwel and Sxõxwiyám",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.7+-+Professor+Keith+Carlson+Illustrates+The+Differences++Between+Sqwelqwel+And+Sxw%C3%B5xwiy%C3%A1m.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.++9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 199,
         "title": "3.8.1 – Professor Keith Carlson Tells the History of the Sto:lo Within Different Colonial Eras (Part 1)",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.8.1+-+Professor+Keith+Carlson+Tells+The+History+of+the+St%C3%B3l%C5%8D+Within+Different+Colonial+Eras%2C+Part+1.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+7+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     },
     {
-        "id": 200,
         "title": "3.8.2 – Professor Keith Carlson Tells the History of the Sto:lo Within Different Colonial Eras (Part 2)",
         "topic": "Keith Carlson Explains",
         "speakers": ["Keith Carlson"],
         "videoUrl": "https://seabirdcurriculumresources.s3.us-east-2.amazonaws.com/videos/Seabird+Island.+A+Community+History.+3.8.2+-+Professor+Keith+Carlson+Tells+The+History+Of+The+St%C3%B3l%C5%8D+People+Within+Different+Colonial+Eras%2C+Part+2.+Keith+T.+Carlson+and+Alessandro+Tarsia.+Chilliwack%2C+2023.+9+min.mp4",
-        "private": true
+        "visibility": "Members Only"
     }
 ]

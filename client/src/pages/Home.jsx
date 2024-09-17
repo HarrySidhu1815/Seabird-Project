@@ -4,11 +4,15 @@ import About from "../components/About/About";
 import ClassroomResource from "../components/ClassroomResource/ClassroomResource";
 import AccessButton from "../UI/AccessButton";
 import classes from "./pages.module.css";
+import { useSelector } from "react-redux";
+import AdminBar from "../UI/AdminBar";
 
 export default function Home() {
+  const { currentUser } = useSelector((state) => state.user);
   return (
     <div>
       <div id={classes.hero}>
+      {currentUser?.admin && <AdminBar />}
         <h1>Seabird Island Culture, History, and Education</h1>
         <p>
           Welcome to a new educational resource site where you can listen to

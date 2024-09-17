@@ -1,11 +1,6 @@
 import mongoose from "mongoose";
 
 const videoSchema = new mongoose.Schema({
-    id: {
-        type: Number,
-        required: true,
-        unique: true
-    },
     title: {
         type: String,
         required: true,
@@ -22,8 +17,8 @@ const videoSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    private: {
-        type: Boolean,
+    visibility: {
+        type: String,
         required: true
     }
 }, {timestamps: true})

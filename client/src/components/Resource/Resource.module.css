@@ -23,6 +23,7 @@
 
 .lesson-header h1{
     font-size: 3rem;
+    font-family: 'Zilla Slab', sans-serif;
 }
 @media screen and (max-width: 900px) {
     .resource{

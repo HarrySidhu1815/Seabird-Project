@@ -20,7 +20,15 @@ export default function Resource() {
   useEffect(() => {
     async function fetchResources() {
       setIsLoading(true);
-      const response = await fetch("/api/resources");
+      const response = await fetch("/api/resources", {
+        method: 'POST',
+        body: JSON.stringify({
+          user: currentUser,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
 
       const data = await response.json();
 

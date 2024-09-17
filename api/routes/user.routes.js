@@ -1,10 +1,10 @@
 import express from 'express'
-import { deleteUser, test } from '../controllers/user.controller.js'
+import { deleteUser, fetchUser, test } from '../controllers/user.controller.js'
 import { verifyUser } from '../utils/verifyUser.js'
 
 const router = express.Router()
 
-router.get('/', test)
-router.delete('/delete:id', verifyUser, deleteUser)
+router.post('/', fetchUser)
+router.delete('/remove/:id', deleteUser)
 
 export default router

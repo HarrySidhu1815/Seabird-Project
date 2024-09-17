@@ -1,0 +1,22 @@
+.interviews-manage-head{
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+.interviews-manage-head h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.interviews-manage-head button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
+    color: #d10000;
+    text-decoration: underline;
+    font-size: 1.25rem;
+}

@@ -1,0 +1,33 @@
+.add-user h3{
+    font-size: 1.25rem;
+  }
+
+.add-user form{
+    display: flex;
+    flex-direction: column;
+    width: 29rem;
+    gap: 1rem;
+}
+
+.add-user input{
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+}
+
+.add-user p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.add-user button{
+    align-self: flex-end;
+    border: none;
+    margin-top: 1rem;
+    background-color: #4ecf00;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    color: #000000;
+    cursor: pointer;
+}

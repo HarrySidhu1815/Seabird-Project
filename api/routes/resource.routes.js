@@ -1,8 +1,12 @@
 import express from 'express'
-import { getAllResources } from '../controllers/resource.controller.js'
+import { deleteLesson, generatePresignedUrl, getAllResources, saveLessonMetaData, updateCurriculum } from '../controllers/resource.controller.js'
 
 const router = express.Router()
 
-router.get('/', getAllResources)
+router.post('/', getAllResources)
+router.post('/update/:id', updateCurriculum)
+router.post('/upload-lesson', saveLessonMetaData)
+router.post('/generate-presigned-url', generatePresignedUrl)
+router.delete('/remove/:id', deleteLesson)
 
 export default router

@@ -1,10 +1,14 @@
 import React from "react";
 import classes from "./CurriculumHeader.module.css";
+import { useSelector } from "react-redux";
+import AdminBar from "../../UI/AdminBar";
 
 export default function CurriculumHeader() {
+  const { currentUser } = useSelector((state) => state.user);
   return (
     <>
     <div className={classes.curriclum}>
+      {currentUser?.admin && <AdminBar />}
       <h1>Curriculum Materials</h1>
       <p>
         The majority of the curriculum resources available here were developed
@@ -19,12 +23,6 @@ export default function CurriculumHeader() {
         resources that are available here. <br />
         <br />
         More resources will continue to be added as they are developed.
-        {/* <br />
-        <br />
-        The UFV Collaboratorium students who contributed to the curriculum
-        resources showcased here include Tara-Lynn Kozma-Perrin, Alexis Klassen,
-        Noa Brooks, Alex de Boer, Bethany Zimmerman, Chloe Belanger, Aliyah
-        Friesen, Zachary Mattie, Gurpreet Kaur Saini */}
       </p>
     </div>
     <div className={classes.contributors}>

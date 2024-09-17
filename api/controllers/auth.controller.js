@@ -4,9 +4,9 @@ import { errorHandler } from "../utils/error.js"
 import jwt from 'jsonwebtoken'
 
 export const signup = async (req, res, next) => {
-    const {username, email, password, admin} = req.body
+    const {email, password} = req.body
     const hashedPassword = bcryptjs.hashSync(password, 10)
-    const newUser = new User({username, email, password: hashedPassword, admin})
+    const newUser = new User({email, password: hashedPassword, admin: false})
     try {
         await newUser.save()
         res.status(201).json({message: "user created successfully"})
@@ -24,6 +24,9 @@ export const signin = async (req, res, next) => {
         if(!validPassword) return next(errorHandler(401, 'Wrong Credentials'))
         const token = jwt.sign({id: validUser._id}, process.env.JWT_SECRET )
         const expiryDate = new Date(Date.now() + 360000)
+
+        validUser.lastActivity = new Date(); 
+        await validUser.save();
 
         const {password: hashedPassword , ...rest} = validUser._doc
     
