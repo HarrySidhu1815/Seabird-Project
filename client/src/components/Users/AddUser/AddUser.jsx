@@ -41,6 +41,30 @@ export default function AddUser() {
             setLoading(false)
             setError(true)
         }
+
+    setLoading(true);
+    setError(false);
+    try {
+        const res = await fetch('/api/auth/reset-password', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ email: formData.email }),
+        });
+
+        const data = await res.json();
+        setLoading(false);
+
+        if (data.success === false) {
+            setError(true);
+        } else {
+            setSuccess(true);
+        }
+    } catch (error) {
+        setLoading(false);
+        setError(true);
+    }
     }
 
   return (
@@ -53,7 +77,7 @@ export default function AddUser() {
           Enter any password. The new user will be prompted to set a custom
           password the first time they log in.{" "}
         </p>
-        {success && <p>User Created Successfully</p>}
+        {success && <p>User Created Successfully and Email sent to user.</p>}
         {error && <p>{error.message || 'Something went wrong'}</p>}
         <button>{loading ? 'Adding...' : 'Add New User'}</button>
       </form>

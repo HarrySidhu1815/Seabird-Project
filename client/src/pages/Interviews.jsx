@@ -103,6 +103,7 @@ export default function Interviews() {
                   selectedSpeakers={selectedSpeakers}
                   onTopicChange={handleFilterTopicChange}
                   onSpeakerChange={handleFilterSpeakerChange}
+                  clearFilters={clearFilters}
                   mobile={true}
                   handleSearchVideo={handleSearchVideo}
                 />
@@ -115,6 +116,7 @@ export default function Interviews() {
                 selectedSpeakers={selectedSpeakers}
                 onTopicChange={handleFilterTopicChange}
                 onSpeakerChange={handleFilterSpeakerChange}
+                clearFilters={clearFilters}
                 mobile={false}
                 handleSearchVideo={handleSearchVideo}
               />
@@ -125,6 +127,12 @@ export default function Interviews() {
         <BrowseVideo videos={selectedVideos} />
       </div>
     );
+  }
+
+  function clearFilters() {
+    setSelectedTopics([]);
+    setSelectedSpeakers([]);
+    setSelectedVideos(videos); 
   }
 
   function handleSearchVideo(input){

@@ -17,31 +17,32 @@ export default function ManageInterviews() {
   
   // fetching videos
 
-  useEffect(() => {
-    async function fetchVideo() {
-      setIsLoading(true);
-      const response = await fetch("/api/videos", {
-        method: "POST",
-        body: JSON.stringify({
-          user: currentUser,
-        }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+  async function fetchVideo() {
+    setIsLoading(true);
+    const response = await fetch("/api/videos", {
+      method: "POST",
+      body: JSON.stringify({
+        user: currentUser,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
-      const data = await response.json();
+    const data = await response.json();
 
-      if (!response.ok) {
-        setError(data.message);
-        setIsLoading(false);
-        return;
-      }
-
-      setVideos(data.videos);
+    if (!response.ok) {
+      setError(data.message);
       setIsLoading(false);
+      return;
     }
 
+    setVideos(data.videos);
+    setIsLoading(false);
+  }
+
+
+  useEffect(() => {
     fetchVideo();
   }, [currentUser]);
 
@@ -98,7 +99,7 @@ export default function ManageInterviews() {
         </button>
         <button onClick={handleUploadVideo}>Upload New Video</button>
       </div>
-      {showUploadModal && <UploadVideo handleCloseModal={closeModalHandler}/>}
+      {showUploadModal && <UploadVideo handleCloseModal={closeModalHandler} refreshCurriculum={fetchVideo}/>}
       {content}
     </div>
   );

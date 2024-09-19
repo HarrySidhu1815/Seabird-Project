@@ -86,7 +86,7 @@
   text-align: center;
 }
 
-.lockPanel {
+/* .lockPanel {
   display: flex;
   width: 100%;
   height: 70vh;
@@ -102,6 +102,18 @@
   top: -30vh;
   left: 0;
   align-items: end;
+  justify-content: end;
+} */
+
+.lockPanel{
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  transition: background 0.5s ease-in-out;
+  position: relative;
+  top: 00vh;
+  left: 0;
+  align-items: center;
   justify-content: end;
 }
 
@@ -208,7 +220,7 @@
   width: 50%;
 }
 
-.terms {
+.terms, .access {
   max-width: 100vw;
   height: 18.75rem;
   background: linear-gradient(#002473cc, #002473cc),
@@ -221,7 +233,7 @@
   align-items: center;
 }
 
-.terms h1 {
+.terms h1, .access h1 {
   font-size: 6rem;
   color: #ffffff;
   font-family: 'Zilla Slab', sans-serif;
@@ -292,10 +304,10 @@
   .admin-unaccessed{
     display: flex;
   }
-  .terms {
+  .terms, .access {
     padding: 2rem;
   }
-  .terms h1 {
+  .terms h1, .access h1 {
     font-size: 3rem;
   }
   .terms-content{

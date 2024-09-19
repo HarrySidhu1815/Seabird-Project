@@ -36,6 +36,7 @@
     background-color: none;
     width: 4rem;
     font-size: 2rem;
+    cursor: pointer;
 }
 .error{
     color: #d40000;

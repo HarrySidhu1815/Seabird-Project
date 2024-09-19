@@ -4,7 +4,7 @@ import CancelButton from "../Icons/cancel";
 import uploadIcon from "../../assets/uploadIcon.svg";
 import classes from "./UploadVideo.module.css";
 
-export default function UploadVideo({ handleCloseModal }) {
+export default function UploadVideo({ handleCloseModal, refreshCurriculum }) {
   const [formData, setFormData] = useState({
     title: "",
     theme: "",
@@ -90,6 +90,9 @@ export default function UploadVideo({ handleCloseModal }) {
     const result = await response.json();
     if (response.ok) {
       alert('Video metadata saved successfully');
+
+      refreshCurriculum();
+      handleCloseModal();
     } else {
       alert('Error saving video metadata: ' + result.message);
     }

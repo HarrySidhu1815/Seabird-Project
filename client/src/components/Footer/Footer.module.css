@@ -29,7 +29,8 @@
     display: flex;
     justify-content: center;
     background-color: #e5f7ff;
-    align-items: stretch;
+    align-items: center;
+    padding: 1rem 0;
 }
 .contact{
     display: flex;

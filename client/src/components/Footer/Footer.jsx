@@ -29,7 +29,7 @@ export default function Footer() {
           <div>
             <h2>Request Access</h2>
             <ul>
-              <li>Fill out a request form</li>
+              <li><Link to="/request-access">Fill out a request form</Link></li>
             </ul>
           </div>
           <div>

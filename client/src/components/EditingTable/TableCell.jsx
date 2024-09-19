@@ -118,8 +118,9 @@ export default function TableCell({ record, heading, isInterview, onSave }) {
           {content}
           { heading === 'visibility' ? (
             <>
+            <div className={classes['select-container']}>
               <select
-                className={classes.input}
+                className={classes.select}
                 value={currentValue}
                 onChange={handleSelectChange}
               >
@@ -127,6 +128,7 @@ export default function TableCell({ record, heading, isInterview, onSave }) {
                 <option value="Members Only">Members Only</option>
                 <option value="Hidden">Hidden</option>
               </select>
+            </div>
               {hasChanged && 
                  <button
                  onClick={handleSave}
@@ -141,7 +143,7 @@ export default function TableCell({ record, heading, isInterview, onSave }) {
               {
               (
               <textarea
-                className={classes.input}
+                className={`${classes.input} ${classes.textarea}`}
                 rows={2}
                 type="text"
                 onChange={handleInputChange}

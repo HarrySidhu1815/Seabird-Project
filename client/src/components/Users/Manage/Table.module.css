@@ -32,6 +32,7 @@ table{
 .remove-modal p{
     text-align: center;
     margin: 0;
+    margin-top: 1rem;
     margin-bottom: 5rem;
 }
 .action-buttons{
@@ -56,4 +57,14 @@ table{
     cursor: pointer;
     border-radius: 2.70rem;
     border: 0.2rem solid #d10000;
+}
+.table-heading{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.table-heading img{
+    position: absolute;
+    right: 0rem;
+    cursor: pointer;
 }

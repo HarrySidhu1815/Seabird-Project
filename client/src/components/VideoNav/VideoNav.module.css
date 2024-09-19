@@ -3,11 +3,11 @@
     background-color: #002473;
     color: #ffffff;
     height: 100%;
+    padding: 2rem;
 }
 
 .topic-filter, .speaker-filter{
     padding-top: 1rem;
-    padding: 2rem;
 }
 
 .topic-filter h3, .speaker-filter h3{
@@ -110,6 +110,11 @@ input[type="checkbox"]:checked::before {
 
 .searchButton img{
     width: 1.8rem;
+}
+.clear-filters{
+    margin: 0;
+    text-decoration: underline;
+    cursor: pointer;
 }
 @media screen and (max-width: 900px) {
     .sideFilter{

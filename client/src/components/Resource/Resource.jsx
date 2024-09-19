@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import arrow from "../../assets/arrow.png";
+import arrow from "../../assets/collapse.svg";
 import Lesson from "./Lesson";
 import classes from "./Resource.module.css";
 import { getAllLessonBySubject, getAllSubjects } from "../../util/lesson";

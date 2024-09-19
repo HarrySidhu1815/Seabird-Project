@@ -12,6 +12,7 @@ import Admin from './pages/Admin'
 import AdminRoute from './pages/AdminRoute'
 import ScrollToTop from './components/Header/ScrollToTop'
 import TermsOfUse from './pages/TermsOfUse'
+import RequestAccessPage from './pages/RequestAccess'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path='/resources' element={<OtherResource />} />
         <Route path='/login' element={<Login />} />
         <Route path='/termsofuse' element={<TermsOfUse />} />
+        <Route path='/request-access' element={<RequestAccessPage />} />
         <Route
           path='/admin'
           element={<AdminRoute element={<Admin />} />} 

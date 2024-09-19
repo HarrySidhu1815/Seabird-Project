@@ -10,6 +10,7 @@ export default function VideoNav({
   onTopicChange,
   onSpeakerChange,
   handleSearchVideo,
+  clearFilters,
   videos,
   mobile,
 }) {
@@ -34,7 +35,7 @@ export default function VideoNav({
 
   return (
     <div className={classes.sideFilter}>
-
+      <p className={classes['clear-filters']} onClick={clearFilters}>Clear all filters</p>
       <div className={classes["search-bar"]}>
         <form className={classes.searchInput}>
           <button className={classes.searchButton} onClick={handleSearchClick}>
