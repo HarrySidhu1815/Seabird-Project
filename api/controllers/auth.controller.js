@@ -51,7 +51,7 @@ export const resetPassword = async (req, res) => {
         return res.status(404).json({ success: false, message: 'User not found' });
     }
 
-    const resetToken = jwt.sign({ id: user._id }, 'yourSecretKey', { expiresIn: '1h' });
+    const resetToken = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: '1h' });
 
     const resetURL = `${process.env.CLIENT_URL}/reset-password/${resetToken}`;
 
@@ -63,3 +63,24 @@ export const resetPassword = async (req, res) => {
 
     return res.status(200).json({ success: true, message: 'Password reset email sent' });
 };
+
+export const updatePassword = async (req, res) => {
+    const { token, password } = req.body;
+
+    try {
+        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        const user = await User.findById(decoded.id);
+
+        if (!user) {
+            return res.status(400).json({ success: false, message: 'Invalid token' });
+        }
+
+        user.password = bcryptjs.hashSync(password, 10);
+        await user.save();
+
+        res.json({ success: true, message: 'Password updated successfully' });
+    } catch (error) {
+        res.status(400).json({ success: false, message: 'Invalid or expired token' });
+    }
+};
+

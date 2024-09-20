@@ -13,6 +13,7 @@ import AdminRoute from './pages/AdminRoute'
 import ScrollToTop from './components/Header/ScrollToTop'
 import TermsOfUse from './pages/TermsOfUse'
 import RequestAccessPage from './pages/RequestAccess'
+import ForgetPassword from './pages/ForgetPassword'
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/termsofuse' element={<TermsOfUse />} />
         <Route path='/request-access' element={<RequestAccessPage />} />
+        <Route path='/reset-password/:token' element={<ForgetPassword />} />
         <Route
           path='/admin'
           element={<AdminRoute element={<Admin />} />} 

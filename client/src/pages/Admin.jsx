@@ -28,7 +28,7 @@ export default function Admin() {
       </div>
 
       <div className={classes["manage-user"]}>
-        <h1>Elderly Interviews</h1>
+        <h1>Elder Interviews</h1>
         <ManageInterviews />
       </div>
 

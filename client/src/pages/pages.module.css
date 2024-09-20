@@ -249,6 +249,74 @@
   font-family: 'Zilla Slab', sans-serif;
 }
 
+.forgot-password{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto
+}
+
+.forgot-password h2{
+  font-size: 2rem;
+  margin: 0;
+}
+
+.forgot-password p{
+  font-size: 1rem;
+  color: #000000;
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.forgot-password-form{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 32rem;
+  margin-top: 2rem;
+  padding: 0rem 4rem;
+}
+
+.forgot-password-form label{
+  font-size: 1rem;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+.forgot-password-form input{
+  width: auto;
+  margin-bottom: 1.75rem;
+  font-size: 1.25rem;
+}
+
+.forgot-password-form p{
+  color: #d10000;
+  margin: 0;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.success{
+  color: #4ecf00;
+  margin: 0;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.forgot-password-form button{
+ align-self: flex-end;
+ background-color: #d10000;
+ color: #ffffff;
+ font-size: 1rem;
+ font-weight: bold;
+ border: none;
+ cursor: pointer;
+ padding: 1rem 2rem;
+ border-radius: 2.5rem;
+}
+
 @media screen and (max-width: 900px) {
   #hero h1 {
     font-size: 3rem;
