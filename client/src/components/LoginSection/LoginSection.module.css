@@ -249,4 +249,8 @@
     .agreementForm{
         width: 65%;
     }
+    .reset-email-modal{
+        height: 70vh;
+        padding: 2rem 2rem;
+    }
 }

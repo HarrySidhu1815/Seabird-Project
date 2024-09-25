@@ -1,16 +1,16 @@
 import nodemailer from 'nodemailer'
 
-export async function sendEmail({ to, subject, text }, next) {
+export async function sendEmail({ to, subject, text }) {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'harjobanpreet15@gmail.com',
-            pass: 'ueqe rcgn sdbz lsmx',
+            user: 'learningwithseabird@gmail.com',
+            pass: process.env.EMAIL_PASSWORD,
         },
     });
 
     const mailOptions = {
-        from: 'harjobanpreet15@gmail.com',
+        from: 'learningwithseabird@gmail.com',
         to: to,
         subject: subject,
         text: text,
@@ -19,6 +19,6 @@ export async function sendEmail({ to, subject, text }, next) {
     try {
         await transporter.sendMail(mailOptions);
     } catch (error) {
-        next(error)
+        throw error
     }
 }

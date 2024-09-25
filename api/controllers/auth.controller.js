@@ -77,7 +77,7 @@ export const updateTerms = async (req, res) => {
   }
 };
 
-export const resetPassword = async (req, res) => {
+export const resetPassword = async (req, res, next) => {
   const { email, type } = req.body;
 
   let expiryTime;
@@ -112,34 +112,39 @@ ${resetURL}
 To report this request if it was not made by you, please send an email to our team at PARCCollab@ufv.ca.
 `;
 
-  await sendEmail({
-    to: user.email,
-    subject: "Password Reset",
-    text: type === "old-user" ? Emailtext : `Welcome to Learning With Seabird!
+try {
+    await sendEmail({
+      to: user.email,
+      subject: "Password Reset",
+      text: type === "old-user" ? Emailtext : `Welcome to Learning With Seabird!
+    
+    We are pleased to inform you that you have been granted access to all of Learning With Seabird’s restricted materials.
+    
+    Login Details:
+    
+    Email: ${email}
+    Token: ${resetToken}
+    Please follow these steps to get started:
+    
+    1. Change Password: Use the token provided above to change your password by clicking the link below. The token will expire in 24 hours, so please make sure to complete this step promptly.
+    ${resetURL}
+    
+    2. Log In: After changing your password, you can log in to learningwithseabird.ca using your email and the new password you created.
+    
+    3. Review Terms of Use: Before accessing any restricted materials, please read our Terms of Use. It is important to understand and agree to our terms before proceeding.
+    If you encounter any issues or have questions, feel free to reach out to us.
+    
+    PARCCollab@ufv.ca.
+    `,
+    });
+    
+    return res
+      .status(200)
+      .json({ success: true, message: "Password reset email sent" });
+} catch (error) {
+    next(errorHandler(500, 'Cannot Send the Email'))
+}
 
-We are pleased to inform you that you have been granted access to all of Learning With Seabird’s restricted materials.
-
-Login Details:
-
-Email: ${email}
-Token: ${resetToken}
-Please follow these steps to get started:
-
-1. Change Password: Use the token provided above to change your password by clicking the link below. The token will expire in 24 hours, so please make sure to complete this step promptly.
-${resetURL}
-
-2. Log In: After changing your password, you can log in to learningwithseabird.ca using your email and the new password you created.
-
-3. Review Terms of Use: Before accessing any restricted materials, please read our Terms of Use. It is important to understand and agree to our terms before proceeding.
-If you encounter any issues or have questions, feel free to reach out to us.
-
-PARCCollab@ufv.ca.
-`,
-  });
-
-  return res
-    .status(200)
-    .json({ success: true, message: "Password reset email sent" });
 };
 
 export const updatePassword = async (req, res) => {
