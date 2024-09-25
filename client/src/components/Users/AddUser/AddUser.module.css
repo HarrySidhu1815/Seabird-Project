@@ -11,9 +11,10 @@
 
 .add-user input{
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     background-color: #ffffff;
     color: #000000;
+    border: 1px solid #000000;
 }
 
 .add-user input:-webkit-autofill {
