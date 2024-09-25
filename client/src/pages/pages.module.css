@@ -66,10 +66,10 @@
   position: relative;
   overflow: hidden;
 }
-.restricted {
+/* .restricted {
   overflow: hidden;
   position: relative;
-}
+} */
 .mobFilter {
   height: 5rem;
   font-size: 1rem;
@@ -117,10 +117,10 @@
   justify-content: end;
 }
 
-.restricted_cuuriculum {
+/* .restricted_cuuriculum {
   max-height: 100vh;
   overflow: hidden;
-}
+} */
 .deskFilters {
   display: block;
 }
@@ -291,14 +291,14 @@
   font-size: 1.25rem;
 }
 
-.forgot-password-form p{
+.forgot-password-form .error{
   color: #d10000;
   margin: 0;
   align-self: center;
   margin-bottom: 1rem;
 }
 
-.success{
+.forgot-password-form .success{
   color: #4ecf00;
   margin: 0;
   align-self: center;
@@ -315,6 +315,47 @@
  cursor: pointer;
  padding: 1rem 2rem;
  border-radius: 2.5rem;
+}
+
+.content-resources{
+  margin: 2rem 6.25rem;
+  margin-bottom: 20rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.content-resources h2{
+  font-family: 'Zilla Slab', sans-serif;
+  font-size: 3rem;
+}
+
+.website-links{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.website-link{
+  font-family: 'Zilla Slab', sans-serif;
+  font-size: 2rem;
+  width: 35%;
+  text-decoration: underline;
+  color: #002473;
+  margin-bottom: 6rem;
+}
+.website-link:hover{
+  color: #d10000
+}
+.pdf-documents{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: first baseline;
+  width: 100%;
+  gap: calc((100% - (4 * 13rem)) / 3);
+  flex-wrap: wrap;
 }
 
 @media screen and (max-width: 900px) {
@@ -391,5 +432,15 @@
   .resources p{
     width: 100%;
     text-align: center;
+  }
+  .content-resources{
+    margin: 2rem 2rem;
+  }
+  .pdf-documents{
+    justify-content: center;
+    gap: 2rem;
+  }
+  .website-link{
+    font-size: 1.5rem;
   }
 }

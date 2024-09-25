@@ -7,7 +7,7 @@ export default function Table({ headers, data: initialData, showAll }) {
   const [data, setData] = useState(initialData);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: null });
 
-  const filteredHeadings = ['email', 'createdAt', 'lastActivity'];
+  const filteredHeadings = ['email', 'createdAt', 'updatedAt'];
   const [showModal, setShowModal] = useState({
     show: false,
     email: "",
@@ -72,7 +72,7 @@ export default function Table({ headers, data: initialData, showAll }) {
       let aValue = a[key];
       let bValue = b[key];
   
-      if (key === "createdAt" || key === "lastActivity") {
+      if (key === "createdAt" || key === "updatedAt") {
         aValue = Date.parse(aValue);
         bValue = Date.parse(bValue);
       }
@@ -96,7 +96,7 @@ export default function Table({ headers, data: initialData, showAll }) {
     } else if (key === "Date Added") {
       key = "createdAt";
     } else if (key === "Last Activity") {
-      key = "lastActivity";
+      key = "updatedAt";
     }
     
     let direction = "ascending";
@@ -173,7 +173,7 @@ export default function Table({ headers, data: initialData, showAll }) {
             <tr key={`${record._id}`}>
               {filteredHeadings.map((heading) => (
                 <td key={`${heading}-${record._id}-${index}`}>
-                  {heading === "createdAt" || heading === "lastActivity"
+                  {heading === "createdAt" || heading === "updatedAt"
                     ? formatDate(record[heading])
                     : record[heading]}
                 </td>

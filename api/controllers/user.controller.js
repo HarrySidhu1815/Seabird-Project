@@ -16,7 +16,7 @@ export const fetchUser = async (req, res, next) => {
 
       if (isAdmin) {
         users = await User.find().select(
-          "-password -dateAdded -updatedAt -username -admin -__v"
+          "-password -dateAdded -username -admin -__v"
         );
       } else {
         res.status(403).json({ message: "User not authorized" });

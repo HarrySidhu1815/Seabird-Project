@@ -4,6 +4,7 @@ import Resource from '../components/Resource/Resource'
 import classes from './pages.module.css'
 import { useSelector } from 'react-redux'
 import AccessButton from '../UI/AccessButton'
+import FeedbackTab from '../UI/FeedbackTab'
 
 export default function Curriculum() {
   const {currentUser} = useSelector((state) => state.user)
@@ -11,7 +12,7 @@ export default function Curriculum() {
   return (
     <div>
       <CurriculumHeader />
-      <div className={`${!currentUser ? classes['restricted_cuuriculum'] : ''}`}>
+      <div>
       <Resource />
       </div>
       {!currentUser && (
@@ -19,6 +20,7 @@ export default function Curriculum() {
             <AccessButton />
             </div>
         )}
+        {currentUser && <FeedbackTab />}
     </div>
   )
 }

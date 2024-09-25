@@ -8,7 +8,7 @@ export default function CurriculumHeader() {
   return (
     <>
     <div className={classes.curriclum}>
-      {currentUser?.admin && <AdminBar />}
+      {currentUser && currentUser.admin !== 'no-access' && <AdminBar />}
       <h1>Curriculum Materials</h1>
       <p>
         The majority of the curriculum resources available here were developed
@@ -29,7 +29,7 @@ export default function CurriculumHeader() {
       <p>The UFV Collaboratorium students who contributed to the curriculum
         resources showcased here include Tara-Lynn Kozma-Perrin, Alexis Klassen,
         Noa Brooks, Alex de Boer, Bethany Zimmerman, Chloe Belanger, Aliyah
-        Friesen, Zachary Mattie, Gurpreet Kaur Saini</p>
+        Friesen, Zachary Mattie and Gurpreet Kaur Saini.</p>
     </div>
     </>
   );

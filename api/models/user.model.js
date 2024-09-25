@@ -8,16 +8,17 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true
+        required: true,
+        minlength: 8
     },
     admin: {
-        type: Boolean,
+        type: String,
         required: true
     },
-    lastActivity: {
-        type: Date,
-        default: Date.now,
-      }
+    termsAgreed: { 
+        type: Boolean, 
+        default: false 
+    },
 }, {timestamps: true})
 
 const User = mongoose.model('User', userSchema)

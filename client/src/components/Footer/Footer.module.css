@@ -71,8 +71,9 @@
     -webkit-padding-start: 0;
     gap: 0.25rem
 }
-.outer-div ul li{
+.outer-div ul li a{
     text-decoration: underline;
+    font-weight: normal;
 }
 
 .bmo, .seabird{

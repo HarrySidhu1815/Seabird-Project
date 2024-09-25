@@ -7,7 +7,7 @@ export default function LoginHeader() {
   const { currentUser } = useSelector((state) => state.user);
   return (
     <div className={classes.login}>
-      {currentUser?.admin && <AdminBar />}
+      {currentUser && currentUser.admin !== 'no-access' && <AdminBar />}
       <h1>Log In</h1>
     </div>
   )

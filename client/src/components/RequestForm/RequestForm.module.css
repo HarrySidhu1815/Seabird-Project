@@ -73,6 +73,9 @@
     border: none;
     align-self:last baseline;
 }
+.submit-btn:hover{
+    background-color: #910101;
+}
 
 @media screen and (max-width: 900px) {
     #request-access{

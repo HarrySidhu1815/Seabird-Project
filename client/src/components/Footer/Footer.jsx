@@ -45,11 +45,11 @@ export default function Footer() {
             <h2>Contact</h2>
             <ul>
               <h3 className={classes.bmo}>The BMO Collaboratorium</h3>
-              <li>PARCCollab@ufv.ca</li>
+              <li><a href="mailto:PARCCollab@ufv.ca">PARCCollab@ufv.ca</a></li>
               <h3 className={classes.seabird}>
                 Seabird Island Community School
               </h3>
-              <li>Email@example.com</li>
+              <li><a href="mailto:webdev@seabirdisland.ca">webdev@seabirdisland.ca</a></li>
             </ul>
           </div>
           <div className={`${classes.logos}`}>

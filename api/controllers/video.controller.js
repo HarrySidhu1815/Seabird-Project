@@ -8,7 +8,7 @@ const s3 = new S3Client(process.env.AWS_REGION);
 export const getAllVideos = async (req, res, next) => {
   if (req.method === "POST") {
     const isAuthorized = req.body.user ? true : false;
-    const isAdmin = req.body.user?.admin;
+    const isAdmin = req.body.user?.admin === 'full-access';
 
     try {
       let videos;

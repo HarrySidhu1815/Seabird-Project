@@ -1,0 +1,35 @@
+.feedback-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80D8FF;
+    padding: 0 1rem;
+}
+.feedback-tab h2{
+    font-size: 1.5rem;
+    margin: 0rem;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+.feedback-tab p{
+    margin: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.feedback-tab button{
+    padding: 1.5rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 2.70rem;
+    background-color: #d10000;
+    margin-bottom: 3.75rem;
+    font-size: 1.25rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.feedback-tab button:hover{
+    background-color: #910101;
+}

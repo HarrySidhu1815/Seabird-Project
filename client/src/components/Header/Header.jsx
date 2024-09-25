@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import classes from './Header.module.css'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { signout } from '../../redux/user/userSlice'
 import menu from '../../assets/burgerMenu.png'
@@ -49,9 +49,9 @@ export default function Header() {
       <div className={classes.logo}><Link to='/'>Learning with Seabird</Link></div>
       <nav className={classes.nav}>
         <ul className={classes.desktopMenu}>
-            <Link to='/interviews'><li>Elder Interviews</li></Link>
-            <Link to='/curriculum'><li>Curriculum Materials</li></Link>
-            <Link to='/resources'><li>Other Resources</li></Link>
+            <NavLink to='/interviews' className={({ isActive }) => isActive ? classes.active : ''}><li>Elder Interviews</li></NavLink>
+            <NavLink to='/curriculum' className={({ isActive }) => isActive ? classes.active : ''}><li>Curriculum Materials</li></NavLink>
+            <NavLink to='/resources' className={({ isActive }) => isActive ? classes.active : ''}><li>Other Resources</li></NavLink>
             <button className={`${classes['login-btn']} ${bgColor}`} onClick={handleButtonClick}>{currentUser ? 'Log Out' : 'Log In'}</button>
         </ul>
         <img className={classes.mobMenu} src={menu} alt='Menu' onClick={()=>setShowMenu(!showMenu)}/>

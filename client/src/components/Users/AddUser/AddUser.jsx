@@ -34,12 +34,17 @@ export default function AddUser() {
             setLoading(false)
 
             if(data.success === false){
-                setError(true)
+                setError(data)
+                setSuccess(false)
+                return
             }
+            setError(false)
             setSuccess(true)
         } catch (error) {
             setLoading(false)
             setError(true)
+            setSuccess(false)
+            return
         }
 
     setLoading(true);
@@ -50,7 +55,7 @@ export default function AddUser() {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email: formData.email }),
+            body: JSON.stringify({ email: formData.email, type: 'new-user' }),
         });
 
         const data = await res.json();
@@ -77,8 +82,8 @@ export default function AddUser() {
           Enter any password. The new user will be prompted to set a custom
           password the first time they log in.{" "}
         </p>
-        {success && <p>User Created Successfully and Email sent to user.</p>}
-        {error && <p>{error.message || 'Something went wrong'}</p>}
+        {success && <p className={classes.success}>User Created Successfully and Email sent to user.</p>}
+        {error && <p className={classes.error}>{error.message || 'Something went wrong'}</p>}
         <button>{loading ? 'Adding...' : 'Add New User'}</button>
       </form>
     </div>

@@ -69,7 +69,7 @@ export default function VideoNav({
         {mobile
           ? showTopic &&
             allTopics.map((topic, index) => (
-              <div key={index}>
+              <div key={`${topic}-${index}`}>
                 <input
                   id="selectedTopic"
                   type="checkbox"
@@ -80,7 +80,7 @@ export default function VideoNav({
               </div>
             ))
           : allTopics.map((topic, index) => (
-              <div key={index}>
+              <div key={`${topic}-${index}`}>
                 <input
                   id="selectedTopic"
                   type="checkbox"
@@ -118,27 +118,27 @@ export default function VideoNav({
         {mobile
           ? showSpeakers &&
             allspeakers.map((speaker, index) => (
-              <div key={index}>
+              <div key={`${speaker}-${index}`}>
                 <input
-                  id="selectedSpeaker"
+                  id={`selectedTopic-${topic}`}
                   type="checkbox"
                   onChange={() => onSpeakerChange(speaker)}
                   checked={selectedSpeakers.includes(speaker)}
                   name="speakers"
                 />
-                <label htmlFor="selectedSpeaker">{speaker}</label>
+                <label htmlFor={`selectedTopic-${topic}`}>{speaker}</label>
               </div>
             ))
           : allspeakers.map((speaker, index) => (
-              <div key={index}>
+              <div key={`${speaker}-${index}`}>
                 <input
-                  id="selectedSpeaker"
+                  id={`selectedTopic-${speaker}`}
                   type="checkbox"
                   onChange={() => onSpeakerChange(speaker)}
                   checked={selectedSpeakers.includes(speaker)}
                   name="speakers"
                 />
-                <label htmlFor="selectedSpeaker">{speaker}</label>
+                <label htmlFor={`selectedTopic-${speaker}`}>{speaker}</label>
               </div>
             ))}
       </div>

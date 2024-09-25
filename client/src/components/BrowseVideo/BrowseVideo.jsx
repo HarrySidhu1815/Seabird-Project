@@ -21,7 +21,7 @@ export default function BrowseVideo({videos}) {
         <div className={`${classes.content} ${currentUser ? '' : classes.loggedOut}`}>
         {videosToDisplay.length > 0 ? (
         videosToDisplay.map((video) => (
-          <VideoCard key={video.id} video={video} />
+          <VideoCard key={video._id} video={video} />
         ))
       ) : (
         <p>No videos found</p>

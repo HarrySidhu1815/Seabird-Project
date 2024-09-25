@@ -18,6 +18,10 @@
     background-color: white;
     cursor: pointer;
     border: 0.4rem solid #002473;
+    transition: transform 0.3s ease;
+}
+.access-btn:hover{
+    transform: scale(1.1);
 }
 .loggedInAccount{
     border: 0.4rem solid #4ecf00;

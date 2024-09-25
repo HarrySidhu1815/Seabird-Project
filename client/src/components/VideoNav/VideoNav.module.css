@@ -25,7 +25,6 @@
 .topic-filter input, .speaker-filter input{
     padding-left: 2rem;
     height: 1.88rem;
-    min-width: 15%;
     color: #002473;
 }
 .topic-filter label, .speaker-filter label{
@@ -38,11 +37,11 @@ input[type="checkbox"] {
     -moz-appearance: none;
     appearance: none;   
     background-color: transparent;   
-    border: 0.2rem solid #ffffff;   
-    padding: 0.3rem;            
-    width: 1.90rem;      
-    height: 1.90rem;    
-    cursor: pointer; 
+    border: 0.2rem solid #ffffff;             
+    width: 2rem;      
+    height: 2rem;    
+    cursor: pointer;
+    position: relative;
 }
 
 input[type="checkbox"]:checked {
@@ -56,7 +55,12 @@ input[type="checkbox"]:checked::before {
     font-size: 1.5rem;          
     display: block;
     text-align: center;
-    line-height: 16px;        
+    line-height: 2rem;
+    position: absolute;        
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .arrow{
@@ -90,6 +94,8 @@ input[type="checkbox"]:checked::before {
     border-radius: 2.25rem;
     padding-left: 4rem;
     border: none;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .searchInput{

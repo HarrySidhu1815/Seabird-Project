@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 const AdminRoute = ({ element, ...rest }) => {
   const { currentUser } = useSelector((state) => state.user);
 
-  if (!currentUser || currentUser.admin !== true) {
+  if (!currentUser || currentUser.admin === 'no-access') {
 
     return <Navigate to="/login" />;
   }

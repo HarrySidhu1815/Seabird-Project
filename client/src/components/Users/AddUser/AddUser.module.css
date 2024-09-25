@@ -13,6 +13,19 @@
     font-size: 1rem;
     padding: 0.5rem 1rem;
     background-color: #ffffff;
+    color: #000000;
+}
+
+.add-user input:-webkit-autofill {
+    background-color: white !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+.error{
+    color: #d40000;
+}
+
+.success{
+    color: #4ecf00;
 }
 
 .add-user p{

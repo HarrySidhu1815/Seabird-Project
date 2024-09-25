@@ -14,19 +14,19 @@ export default function ClassroomResource() {
           title="Elder Interviews"
           description="Browse 99 video interviews with Seabird Island Elders"
           image={ElderInterview}
-          link='interviews'
+          link="interviews"
         />
         <ResouceCard
           title="Curriculum Materials"
           description="Find full lesson plans and materials ready for classroom use"
           image={curriculum}
-          link='curriculum'
+          link="curriculum"
         />
         <ResouceCard
           title="Other Resources"
-          description="Find additional information about Sto:lo history and traditions."
+          description="Find additional information about Stó:lo history and traditions"
           image={otherResource}
-          link='resources'
+          link="resources"
         />
       </div>
       <h1>Who can use these educational materials?</h1>

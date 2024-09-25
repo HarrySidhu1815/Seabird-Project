@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import classes from './pages.module.css'
 import Input from '../UI/Input';
+import { useParams } from 'react-router-dom';
 
 export default function ForgetPassword() {
     const [error, setError] = useState()
@@ -10,7 +11,7 @@ export default function ForgetPassword() {
         password: "",
         'confirm-password': "",
       });
-    const { token } = useRouter().query;
+    const { token } = useParams();
 
       function handleInputChange(e){
         const {name, value} = e.target
@@ -23,11 +24,12 @@ export default function ForgetPassword() {
       }
 
       async function hanldeFormSubmit(e){
-        e.prevntDefault()
+        e.preventDefault()
 
         setLoading(true)
         if(formData.password !== formData['confirm-password']){
             setError('Passwords do not match')
+            setLoading(false)
             return
         }
 
@@ -46,8 +48,10 @@ export default function ForgetPassword() {
         if(!response.ok){
             setLoading(false)
             setError(data.message)
+            return
         }
         setLoading(false)
+        setError(null)
         setSuccess(true)
       }
   return (
@@ -74,8 +78,8 @@ export default function ForgetPassword() {
             onChange={handleInputChange}
           />
           {success && <p className={classes.success}>Your password has been changed successfully</p>}
-          {error && <p>{error}</p>}
-          <button>{loading ? 'Updating' : 'Log In'}n</button>
+          {error && <p className={classes.error}>{error}</p>}
+          <button disabled={loading}>{loading ? 'Updating' : 'Log In'}</button>
       </form>
     </div>
   )

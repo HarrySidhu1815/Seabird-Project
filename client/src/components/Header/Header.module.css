@@ -18,7 +18,9 @@
 .logo a{
     font-weight: bold;
 }
-
+.logo a:hover{
+    color: #D10000;
+}
 
 .desktopMenu{
     display: flex;
@@ -30,6 +32,17 @@
 
 .nav ul li{
     list-style-type: none;
+}
+.desktopMenu li {
+    border-bottom: 3px solid #ffffff;
+}
+
+.desktopMenu li:hover {
+    border-bottom: 3px solid #80d8ff;
+}
+
+.active {
+    border-bottom: 3px solid #80d8ff; 
 }
 
 .login-btn{
@@ -46,6 +59,7 @@
 }
 .stayLoggedIn{
     background-color: #ffffff;
+    color: #000000;
 }
 
 .loggedInAccount{
@@ -53,12 +67,17 @@
     color: #000000;
     font-size: 1rem;
 }
+.loggedInAccount:hover{
+    background-color: #338600;
+}
 
 .notLoggedInAccount{
     background-color: #D10000;
     color: #ffffff;
 }
-
+.notLoggedInAccount:hover{
+    background-color: #910101;
+}
 .mobMenu{
     display: none;
     object-fit: cover;

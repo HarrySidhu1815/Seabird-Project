@@ -1,6 +1,6 @@
 import React from 'react'
 import lockImg from '../assets/lock.svg'
-import loggedInImg from '../assets/loggedIn.png'
+import loggedInImg from '../assets/loggedIn.svg'
 import bluePadlock from '../assets/PadlockBlue.svg'
 import classes from './AccessButton.module.css'
 import { useSelector } from 'react-redux'
@@ -17,7 +17,7 @@ export default function AccessButton({isHomePage}) {
   }
 
   return (
-    <Link className={classes.linkAccess} to='/login'>
+    <Link className={classes.linkAccess} to={currentUser ? '' :'/login'}>
     <button className={`${classes['access-btn']} ${borderClass}`}>
       <img src={ isHomePage ? (currentUser ?  loggedInImg : lockImg): bluePadlock} className={classes.image}/>
         <span className={classes.paragraph}>{currentUser ? 'You Are Logged In' :'Log in for full access to all material'}</span>

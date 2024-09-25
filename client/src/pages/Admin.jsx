@@ -5,8 +5,11 @@ import ManageUser from "../components/Users/Manage/Manage";
 import ManageInterviews from "../components/ManageInterviews/ManageInterviews";
 import ManageCurriculum from "../components/ManageCurriculum/ManageCurriculum";
 import AdminBar from "../UI/AdminBar";
+import { useSelector } from "react-redux";
 
 export default function Admin() {
+  const { currentUser } = useSelector((state) => state.user);
+  
   return (
     <>
     <div className={classes['admin-unaccessed']}>
@@ -26,7 +29,8 @@ export default function Admin() {
         <AddUser />
         <ManageUser />
       </div>
-
+    {currentUser.admin === 'full-access' && (
+      <>
       <div className={classes["manage-user"]}>
         <h1>Elder Interviews</h1>
         <ManageInterviews />
@@ -36,6 +40,9 @@ export default function Admin() {
         <h1>Curriculum Materials</h1>
        <ManageCurriculum />
       </div>
+      </>
+    )}
+      
     </div>
     </>
   );

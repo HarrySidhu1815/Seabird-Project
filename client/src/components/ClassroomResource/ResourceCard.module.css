@@ -32,6 +32,8 @@
     color: #ffffff;
 }
 .view-btn{
+    margin-top: 1rem;
+    font-size: 1rem;
     width: 7.5rem;
     height: 3.75rem;
     border-radius: 2.5rem;
@@ -41,6 +43,10 @@
     align-self: center;
     border: none;
     cursor: pointer;
+    transition: all 0.1s ease-out;
+}
+.view-btn:hover{
+    background-color: #d10000;
 }
 .linkStyle{
     text-align: center;

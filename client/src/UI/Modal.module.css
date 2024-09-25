@@ -9,6 +9,8 @@
     flex-direction: column;
     justify-content: space-between;
     animation: slide-down-fade-in 300ms ease-out forwards;
+    background-color: #ffffff;
+    color: #000000;
   }
 
   .modal::backdrop {
