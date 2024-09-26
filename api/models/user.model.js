@@ -4,7 +4,9 @@ const userSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
-        unique: true
+        unique: true,
+        lowercase: true,
+        trim: true
     },
     password: {
         type: String,
@@ -20,6 +22,11 @@ const userSchema = new mongoose.Schema({
         default: false 
     },
 }, {timestamps: true})
+
+userSchema.pre('save', function (next) {
+    this.email = this.email.toLowerCase();
+    next();
+});
 
 const User = mongoose.model('User', userSchema)
 

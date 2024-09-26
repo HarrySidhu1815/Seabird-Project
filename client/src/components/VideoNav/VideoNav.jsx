@@ -120,25 +120,25 @@ export default function VideoNav({
             allspeakers.map((speaker, index) => (
               <div key={`${speaker}-${index}`}>
                 <input
-                  id={`selectedTopic-${topic}`}
-                  type="checkbox"
-                  onChange={() => onSpeakerChange(speaker)}
-                  checked={selectedSpeakers.includes(speaker)}
-                  name="speakers"
-                />
-                <label htmlFor={`selectedTopic-${topic}`}>{speaker}</label>
-              </div>
-            ))
-          : allspeakers.map((speaker, index) => (
-              <div key={`${speaker}-${index}`}>
-                <input
-                  id={`selectedTopic-${speaker}`}
+                  id={`selectedSpekaer-${speaker}`}
                   type="checkbox"
                   onChange={() => onSpeakerChange(speaker)}
                   checked={selectedSpeakers.includes(speaker)}
                   name="speakers"
                 />
                 <label htmlFor={`selectedTopic-${speaker}`}>{speaker}</label>
+              </div>
+            ))
+          : allspeakers.map((speaker, index) => (
+              <div key={`${speaker}-${index}`}>
+                <input
+                  id={`selectedSpekaer-${speaker}`}
+                  type="checkbox"
+                  onChange={() => onSpeakerChange(speaker)}
+                  checked={selectedSpeakers.includes(speaker)}
+                  name="speakers"
+                />
+                <label htmlFor={`selectedSpeaker-${speaker}`}>{speaker}</label>
               </div>
             ))}
       </div>

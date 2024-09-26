@@ -8,7 +8,7 @@ export const signup = async (req, res, next) => {
   const { email, password } = req.body;
   const hashedPassword = bcryptjs.hashSync(password, 10);
   const newUser = new User({
-    email,
+    email: email.toLowerCase(),
     password: hashedPassword,
     admin: "no-access",
   });
@@ -23,7 +23,7 @@ export const signup = async (req, res, next) => {
 export const signin = async (req, res, next) => {
   const { email, password } = req.body;
   try {
-    const validUser = await User.findOne({ email });
+    const validUser = await User.findOne({ email: email.toLowerCase() });
     if (!validUser) return next(errorHandler(404, "User not found"));
     const validPassword = bcryptjs.compareSync(password, validUser.password);
 
@@ -60,7 +60,7 @@ export const updateTerms = async (req, res) => {
 
   try {
     const user = await User.findOneAndUpdate(
-      { email },
+      { email: email.toLowerCase() },
       { $set: { termsAgreed: true } },
       { new: true }
     );
@@ -90,7 +90,7 @@ export const resetPassword = async (req, res, next) => {
       .status(400)
       .json({ success: false, message: "Invalid user type" });
   }
-  const user = await User.findOne({ email });
+  const user = await User.findOne({ email: email.toLowerCase() });
 
   if (!user) {
     return res.status(404).json({ success: false, message: "User not found" });

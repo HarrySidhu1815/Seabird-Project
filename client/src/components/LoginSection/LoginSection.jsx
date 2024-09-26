@@ -4,6 +4,8 @@ import Input from "../../UI/Input";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import button from "../../assets/LogInButton.svg";
+import invisible from '../../assets/Invisible.svg'
+
 import {
   logInFailure,
   logInStart,
@@ -21,6 +23,7 @@ export default function LoginSection() {
   const [success, setSuccess] = useState(false);
   const [resetLoading, setResetLoading] = useState(false);
   const { loading, error } = useSelector((state) => state.user);
+  const [passwordVisible, setPasswordVisible] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -35,6 +38,10 @@ export default function LoginSection() {
 
   function handlePasswordResetClick() {
     setShowEmailModal(true);
+  }
+
+  function togglePasswordVisibility() {
+    setPasswordVisible((prevVisible) => !prevVisible);
   }
 
   async function handleResetPassword() {
@@ -199,12 +206,15 @@ export default function LoginSection() {
               title="Email"
               onChange={handleInputChange}
             />
-            <Input
-              type="password"
+            <div className={classes['password-wrapper']}>
+              <Input
+              type={passwordVisible ? 'text' : 'password'}
               name="password"
               title="Password"
               onChange={handleInputChange}
             />
+              <img className={classes['toggle-password-btn']} src={invisible} alt={'show/hide button'} onClick={togglePasswordVisibility}/>
+            </div>
             <p>
               Forgot your password?{" "}
               <span
@@ -216,7 +226,7 @@ export default function LoginSection() {
               or request access again.
             </p>
           </div>
-          <img onClick={handleFormSubmit} src={button} alt="submit button" />
+          <img className={classes['form-submit']} onClick={handleFormSubmit} src={button} alt="submit button" />
         </form>
       </div>
     </>

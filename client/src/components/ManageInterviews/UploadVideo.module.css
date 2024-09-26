@@ -54,6 +54,10 @@
     cursor: pointer;
 }
 
+.select-file{
+    color: #d10000;
+}
+
 .upload-form p{
     margin: 0;
 }

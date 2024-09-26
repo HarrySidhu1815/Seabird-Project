@@ -20,6 +20,9 @@
 .upload-image{
     cursor: pointer;
 }
+.select-file{
+    color: #d10000;
+}
 .upload-file{
     display: flex;
     gap: 1rem;

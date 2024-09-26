@@ -194,7 +194,7 @@
   max-width: 100vw;
   min-height: 31.25rem;
   height: auto;
-  background: linear-gradient(#002473CC, #002473CC),  url("../assets/resources1.jpg");
+  background: linear-gradient(#002473CC, #002473CC),  url("../assets/resource.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -259,13 +259,13 @@
 
 .forgot-password h2{
   font-size: 2rem;
-  margin: 0;
+  margin: auto 2rem;
 }
 
 .forgot-password p{
   font-size: 1rem;
   color: #000000;
-  margin: 0;
+  margin: auto 2rem;
   margin-top: 1rem;
 }
 
@@ -275,7 +275,8 @@
   width: 75%;
   max-width: 32rem;
   margin-top: 2rem;
-  padding: 0rem 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .forgot-password-form label{
@@ -286,8 +287,7 @@
 }
 
 .forgot-password-form input{
-  width: auto;
-  margin-bottom: 1.75rem;
+  width: 100%;
   font-size: 1.25rem;
 }
 
@@ -356,6 +356,19 @@
   width: 100%;
   gap: calc((100% - (4 * 13rem)) / 3);
   flex-wrap: wrap;
+}
+.password-wrapper{
+  position: relative;
+  width: auto;
+  margin-bottom: 1.75rem;
+}
+.toggle-password-btn{
+  position: absolute;
+  top: 50%;
+  right: 0rem;
+  height: 2rem;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {

@@ -59,12 +59,13 @@ export default function AddUser() {
         });
 
         const data = await res.json();
-        setLoading(false);
 
         if (data.success === false) {
             setError(true);
+            setLoading(false);
         } else {
             setSuccess(true);
+            setLoading(false);
         }
     } catch (error) {
         setLoading(false);
@@ -84,7 +85,7 @@ export default function AddUser() {
         </p>
         {success && <p className={classes.success}>User Created Successfully and Email sent to user.</p>}
         {error && <p className={classes.error}>{error.message || 'Something went wrong'}</p>}
-        <button>{loading ? 'Adding...' : 'Add New User'}</button>
+        <button disabled={loading}>{loading ? 'Adding...' : 'Add New User'}</button>
       </form>
     </div>
   );

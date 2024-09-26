@@ -138,7 +138,7 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
                 onChange={handleFileChange}
                 className={classes["file-input"]}
               />
-              {selectedFile && <p>{selectedFile.name} uploaded successfully</p>}
+              {selectedFile && <p className={classes["select-file"]}>{selectedFile.name} uploaded successfully</p>}
             </div>
           </div>
           <label htmlFor="title">Lesson Title*</label>

@@ -133,20 +133,21 @@ export default function Interviews() {
   function clearFilters() {
     setSelectedTopics([]);
     setSelectedSpeakers([]);
-    setSelectedVideos(videos); 
+    setSelectedVideos(videos);
   }
 
-  function handleSearchVideo(input){
-
-    if(input.trim() === ''){
-      setSelectedVideos(videos)
+  function handleSearchVideo(input) {
+    if (input.trim() === "") {
+      setSelectedVideos(videos);
     }
 
-    const searchQuery = input.trim().toLowerCase()
+    const searchQuery = input.trim().toLowerCase();
 
-    const filteredVideos = videos.filter(video => video.title.toLowerCase().includes(searchQuery))
+    const filteredVideos = videos.filter((video) =>
+      video.title.toLowerCase().includes(searchQuery)
+    );
 
-    setSelectedVideos(filteredVideos)
+    setSelectedVideos(filteredVideos);
   }
 
   function handleFilterTopicChange(topic) {
@@ -179,27 +180,39 @@ export default function Interviews() {
   return (
     <div>
       <div className={classes.interview}>
-      {currentUser && currentUser.admin !== 'no-access' && <AdminBar />}
+        {currentUser && currentUser.admin !== "no-access" && <AdminBar />}
         <h1>Elder Interviews</h1>
         <p>
-          The 99 videos that appear here were recorded during the later stages
-          of the Covid pandemic. They were conducted as part of a series of
-          interconnected research projects that Prof. Keith Carlson was invited
-          to undertake into the history and culture of the Seabird Island
-          community.
+          A large and diverse group of Elders and Knowledge Keepers generously
+          shared their teachings, wisdom, and life experiences for this project.
+          They all expressed their commitment to helping build curriculum for
+          the students and teachers at the Seabird schools, and to helping the
+          Seabird community as it travels ever further along the path of
+          cultural, political, and economic resurgence. Our hands go up to all
+          of them in thanks.
           <br />
-          <br /> The Knowledge Keepers who shared their stories with Prof.
-          Carlson requested that the interviews be made available to Seabird
-          youth and educators.
           <br />
-          <br /> Dr. Alessandro Tarsia stitched together the 99 mini documentary
-          films and organized them around different themes. People can search
-          the videos either by topic or by the names of the Elders and Knowledge
-          Keepers who appear in the videos.
+          Many of the videos that appear here were recorded during the later
+          stages of the Covid-19 pandemic. They were conducted as part of a
+          series of interconnected research projects that Prof. Keith Carlson
+          was invited to undertake documenting the history and culture of the
+          Seabird Island community.
           <br />
-          <br /> UFV BMO Collaboratorium students built curriculum resources,
-          including teacher’s guides and lesson plans, that connect directly to
-          the Elders’ voices in the videos.
+          <br />
+          The Knowledge Keepers who shared their stories with Prof. Carlson
+          requested that the interviews be made available to Seabird youth and
+          educators.
+          <br />
+          <br />
+          Dr. Alessandro Tarsia stitched together the mini documentary films and
+          organized them around different themes. People can search the videos
+          either by topic, or by the names of the Elders and Knowledge Keepers
+          who appear in the videos.
+          <br />
+          <br />
+          UFV BMO Collaboratorium summer student interns built the curriculum
+          resources, including teacher’s guides and lesson plans, that connect
+          directly to the Elders’ voices in the videos.
         </p>
       </div>
       {content}

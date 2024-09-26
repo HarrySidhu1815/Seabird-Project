@@ -40,10 +40,11 @@
 }
 
 .VideoModal {
+  max-width: 90%;
   height: fit-content;
 }
 .modal-content{
-  width: 50rem;
+  max-width: 50rem;
   margin: auto;
   height: 85vh;
   padding: 1rem 8.75rem;
@@ -72,7 +73,7 @@
   background-color: antiquewhite;
   position: relative;
   cursor: pointer;
-  height: 60%;
+  max-height: 60%;
   max-height: 16.56rem;
 }
 
@@ -100,9 +101,17 @@
     margin: auto;
     height: 85vh;
     padding: 1rem;
+    gap: 1rem;
   }
   .card-container {
     width: 90%;
     max-width: 30rem;
+  }
+  .modal-content{
+    width: 100%;
+    overflow-x: hidden;
+    margin: auto;
+    height: 85vh;
+    padding: 0rem;
   }
 }

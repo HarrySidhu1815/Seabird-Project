@@ -69,6 +69,7 @@
 }
 .loggedInAccount:hover{
     background-color: #338600;
+    border-color: #338600;
 }
 
 .notLoggedInAccount{
