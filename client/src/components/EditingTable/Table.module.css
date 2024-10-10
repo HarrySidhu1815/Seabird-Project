@@ -121,6 +121,7 @@
     -moz-appearance: none;
     background: #fff;
     border: none;
+    color: #000000;
     font-size: 1rem;
     width: 100%;
     background-image: url('../../assets/exapnd.svg'); 

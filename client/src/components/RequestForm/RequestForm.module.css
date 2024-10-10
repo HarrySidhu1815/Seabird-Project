@@ -76,6 +76,11 @@
 .submit-btn:hover{
     background-color: #910101;
 }
+.success-msg{
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
 
 @media screen and (max-width: 900px) {
     #request-access{

@@ -112,11 +112,14 @@ ${resetURL}
 To report this request if it was not made by you, please send an email to our team at PARCCollab@ufv.ca.
 `;
 
-try {
+  try {
     await sendEmail({
       to: user.email,
       subject: "Password Reset",
-      text: type === "old-user" ? Emailtext : `Welcome to Learning With Seabird!
+      text:
+        type === "old-user"
+          ? Emailtext
+          : `Welcome to Learning With Seabird!
     
     We are pleased to inform you that you have been granted access to all of Learning With Seabird’s restricted materials.
     
@@ -137,14 +140,13 @@ try {
     PARCCollab@ufv.ca.
     `,
     });
-    
+
     return res
       .status(200)
       .json({ success: true, message: "Password reset email sent" });
-} catch (error) {
-    next(errorHandler(500, 'Cannot Send the Email'))
-}
-
+  } catch (error) {
+    next(errorHandler(500, "Cannot Send the Email"));
+  }
 };
 
 export const updatePassword = async (req, res) => {
@@ -167,4 +169,58 @@ export const updatePassword = async (req, res) => {
       .status(400)
       .json({ success: false, message: "Invalid or expired token" });
   }
+};
+
+export const requestAccess = async (req, res) => {
+  const { firstName, lastName, school, email, reason } = req.body;
+
+  if (
+    firstName.trim() == "" &&
+    !firstName &&
+    lastName.trim() == "" &&
+    !lastName &&
+    school.trim() == "" &&
+    !school &&
+    email.trim() == "" &&
+    !email.includes("@") &&
+    reason.trim() == "" &&
+    !reason
+  ) {
+    res
+      .status(400)
+      .json({
+        success: false,
+        message: "Invalid inputs! Please enter all the inputs",
+      });
+  }
+
+  try {
+    await sendEmail({
+      to: 'Barbara@seabirdisland.ca',
+      subject: "Request for the Access to Learning with Seabird website",
+      text: `Dear Seabird Administrator,
+
+You have received a new request for full access to the Seabird Island resources from the website. Below are the details of the request:
+
+- First Name: {${firstName}}
+- Last Name: {${lastName}}
+- Email: {${email}}
+- School/Organization/Group Affiliation: {${school}}
+- Reason for Request: 
+  {${reason}}
+
+Please review the request and respond to the applicant accordingly.
+
+Best regards,  
+Learning with seabird Team
+    `,
+    });
+
+    return res
+      .status(200)
+      .json({ success: true, message: "Email sent to administrator! Please wait 3-5 business days" });
+  } catch (error) {
+    next(errorHandler(500, "Cannot Send the Access Request Email"));
+  }
+
 };

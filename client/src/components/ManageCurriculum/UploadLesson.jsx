@@ -37,7 +37,11 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
         contentType = 'application/zip';
       } else if (selectedFile.name.endsWith('.pdf')) {
         contentType = 'application/pdf';
-      } else {
+      } else if (selectedFile.name.endsWith('.docx')) {
+        contentType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+      } else if (selectedFile.name.endsWith('.doc')) {
+        contentType = 'application/msword';
+      }else {
         throw new Error('Unsupported file type');
       }
 
@@ -129,12 +133,12 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
               }}
             />
             <div className={classes["choose-file"]}>
-              <h3>Choose File (zipped folder or .pdf)</h3>
+              <h3>Choose File (.docx, zipped folder or .pdf)</h3>
               <input
                 ref={fileRef}
                 type="file"
                 name="file"
-                accept=".zip, .pdf"
+                accept=".zip, .pdf, .doc, .docx"
                 onChange={handleFileChange}
                 className={classes["file-input"]}
               />
@@ -161,12 +165,10 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
           >
             <option value="">General</option>
             <option value='English'>English</option>
-            <option value='Narratives'>Narratives</option>
             <option value='Bio'>Bio</option>
             <option value='Chemistry'>Chemistry</option>
             <option value='Physics'>Physics</option>
             <option value='Science'>Science</option>
-            <option value='Memoryscapes and Memory Places'>Memoryscapes and Memory Places</option>
             <option value='Math'>Math</option>
             <option value='Social Studies'>Social Studies</option>
             <option value='World History'>World History</option>

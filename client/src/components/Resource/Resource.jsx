@@ -72,7 +72,6 @@ export default function Resource() {
   const subjects = getAllSubjects(data);
 
   if(!currentUser){
-      const lessons = getAllLessonBySubject(data, 'English');
       const isExpanded = expandedSubjects['Sample'];
 
       return (
@@ -89,7 +88,7 @@ export default function Resource() {
             </button>
           </div>
           {isExpanded &&
-            lessons.map((lesson) => {
+            data.map((lesson) => {
               return (
                 <Lesson
                   key={lesson.title}
