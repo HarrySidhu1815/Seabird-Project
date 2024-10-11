@@ -172,6 +172,7 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
             <option value='Math'>Math</option>
             <option value='Social Studies'>Social Studies</option>
             <option value='World History'>World History</option>
+            <option value='Land-Based Learning'>Land-Based Learning</option>
           </select>
 
           <label htmlFor="grade">Grade Level*</label>
