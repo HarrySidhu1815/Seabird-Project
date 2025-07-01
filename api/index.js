@@ -20,7 +20,9 @@ app.use(express.json())
 
 app.use(cookieParser())
 
-mongoose.connect(process.env.MONGO_DB_URL).then(()=>{
+mongoose.connect(
+    'mongodb+srv://harjobanpreet15:chhiIIDrNO5M8OH1@seabird-island.sepyseq.mongodb.net/seabird-db?retryWrites=true&w=majority&appName=seabird-island'
+).then(()=>{
     console.log('MongoDB Connected')
 }).catch((error)=> {
     console.log(error)

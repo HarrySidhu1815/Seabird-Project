@@ -72,3 +72,12 @@
     border: 0.2rem solid #d10000;
     cursor: pointer;
 }
+
+.upload-form span{
+    background-color: #d10000;
+    margin-left: 2rem;
+    border-radius: 2.7rem;
+    color: #ffffff;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+}

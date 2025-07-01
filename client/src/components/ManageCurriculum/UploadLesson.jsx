@@ -3,6 +3,8 @@ import Modal from "../../UI/Modal";
 import CancelButton from "../Icons/cancel";
 import uploadIcon from "../../assets/uploadIcon.svg";
 import classes from "./UploadLesson.module.css";
+import { useDispatch, useSelector } from 'react-redux';
+import { addSubject } from "../../redux/subject/subjectSlice";
 
 export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
   const [formData, setFormData] = useState({
@@ -13,7 +15,11 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
   });
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploading, setUploading] = useState(false);
+  const [isAddingSubject, setIsAddingSubject] = useState(false); 
+  const [newSubject, setNewSubject] = useState("");
   const fileRef = useRef();
+  const dispatch = useDispatch();
+  const subjects = useSelector((state) => state.subjects.subjects);
 
   function handleFileChange(e) {
     setSelectedFile(e.target.files[0]);
@@ -27,6 +33,17 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
         ...prevState,
         [name]: value
     }))
+  }
+
+  function handleSubjectChange(e) {
+    const { value } = e.target;
+    
+    if (value === "add-new") {
+      setIsAddingSubject(true); 
+    } else {
+      setFormData({ ...formData, subject: value });
+      setIsAddingSubject(false);
+    }
   }
 
   const handleFileUpload = async () => {
@@ -115,6 +132,15 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
     setUploading(false);
     };
 
+    function handleAddSubject() {
+      if (newSubject.trim()) {
+        dispatch(addSubject(newSubject));
+        setFormData({ ...formData, subject: newSubject });
+        setIsAddingSubject(false);  
+        setNewSubject(''); 
+      }
+    }
+
   return (
     <Modal className={classes["upload-modal"]} onClose={handleCloseModal}>
       <div className={classes["cancel-video"]} onClick={handleCloseModal}>
@@ -159,21 +185,28 @@ export default function UploadLesson({ handleCloseModal, refreshCurriculum}) {
           <select
             name="subject"
             value={formData.subject}
-            onChange={handleInputChange}
+            onChange={handleSubjectChange}
             required
             id="subject"
           >
-            <option value="">General</option>
-            <option value='English'>English</option>
-            <option value='Bio'>Bio</option>
-            <option value='Chemistry'>Chemistry</option>
-            <option value='Physics'>Physics</option>
-            <option value='Science'>Science</option>
-            <option value='Math'>Math</option>
-            <option value='Social Studies'>Social Studies</option>
-            <option value='World History'>World History</option>
-            <option value='Land-Based Learning'>Land-Based Learning</option>
+            {subjects.map((subject) => (
+              <option key={subject} value={subject}>{subject}</option>
+            ))}
+            <option value="add-new">Add New Subject</option>
           </select>
+
+          {/* Custom subject input */}
+          {isAddingSubject && (
+            <div>
+              <input
+                type="text"
+                placeholder="Enter custom subject"
+                value={newSubject}
+                onChange={(e) => setNewSubject(e.target.value)}
+              />
+              <span type="button" onClick={handleAddSubject}>Add Subject</span>
+            </div>
+          )}
 
           <label htmlFor="grade">Grade Level*</label>
           <input
